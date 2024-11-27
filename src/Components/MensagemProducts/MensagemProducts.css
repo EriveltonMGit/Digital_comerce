@@ -1,0 +1,50 @@
+
+/* mensagemCartProdutos */
+#mensagemCartProdutos{
+  position: fixed;
+  margin-top: 25vh;
+  width: auto;
+
+  background-color: #45d80b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+
+@keyframes slideMensagem {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+ 
+}
+
+
+#mensagemRemoveCartProdutos{
+  position: fixed;
+  margin-top: 25vh;
+  width: auto;
+
+  background-color: #d80b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}

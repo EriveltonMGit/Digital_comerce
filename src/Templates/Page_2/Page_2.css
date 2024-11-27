@@ -1,0 +1,161 @@
+.section_2 {
+  margin-top: 5vh;
+  width: 90%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* section_card_top */
+.card_title {
+  width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 0;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bk-color);
+  overflow: hidden;
+  
+}
+
+/* card_text */
+.card_text {
+  border: 1px solid #ddd;
+  width: 60%;
+  height: 90%;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  
+
+
+  h1{
+    color: white;
+    font-size: 4vw;
+    overflow: hidden;
+    font-family: 'Proelium';
+    
+
+
+  span{
+    color: var(--bk-color-yellow);
+  }
+
+
+  }
+
+
+}
+
+
+
+
+/* card_anuncio */
+.card_anuncio{
+    border: 1px solid #ddd;
+    width: 30%;
+    height: 90%;
+    border-radius: 5px;
+    padding: 1rem; 
+    overflow: hidden;
+}
+
+
+/* /* =============MIDIA SCREM ================= */
+@media (max-width:480px) {
+  .section_2 {
+    margin-top: 5vh;
+    width: 90%;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1vh;
+    overflow: hidden;
+ 
+    
+    
+  }
+  
+  /* section_card_top */
+  .card_title {
+    width: 100%;
+    
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    gap: 1vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bk-color);
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  /* card_text */
+  .card_text {
+    border: 1px solid #ddd;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    
+  
+  
+    h1{
+      color: white;
+      font-size: 10vw;
+      overflow: hidden;
+      font-family: 'Proelium';
+      overflow: hidden;
+      padding: 1rem;
+  
+    span{
+      color: var(--bk-color-yellow);
+    }
+  
+  
+    }
+  
+  
+  }
+  
+  
+  
+  
+  /* card_anuncio */
+  .card_anuncio{
+      border: 1px solid #ddd;
+      width: 90%;
+      height: 90%;
+      border-radius: 5px;
+      padding: 1rem; 
+      overflow: hidden;
+    
+  }
+  
+}

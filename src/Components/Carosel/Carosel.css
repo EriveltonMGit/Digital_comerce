@@ -1,0 +1,34 @@
+
+
+.oferta{
+   
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   img{
+    width: 15vw;
+   }
+   
+}
+
+/* =============MIDIA SCREM ================= */
+@media (max-width:480px){
+    .oferta{
+   
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+       img{
+        width: 50vw;
+       }
+       
+    }
+    
+}

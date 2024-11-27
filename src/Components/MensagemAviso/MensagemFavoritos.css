@@ -1,0 +1,70 @@
+#favoritos_span {
+  position: fixed;
+  margin-top: 20vh;
+  width: auto;
+
+  background-color: #45d80b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+
+
+
+
+@keyframes slideMensagem {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+ 
+}
+
+
+/* =============MIDIA SCREM ================= */
+@media (max-width:480px){
+  #favoritos_span {
+    position: fixed;
+    width: 70%;
+  
+    background-color: #45d80b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    border-radius: 10px;
+    right: 12%;
+    z-index: 9990;
+    font-family: "Sora-VariableFont_wght";
+    font-size: 3vw;
+    color: white;
+    animation: slideMensagem 1s linear;
+    display: none;
+  }
+  
+  
+  
+  
+  @keyframes slideMensagem {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+   
+  }
+  
+}
+
