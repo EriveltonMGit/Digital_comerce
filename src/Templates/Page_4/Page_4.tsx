@@ -4,11 +4,11 @@ import "./Page_4.css";
 function Page_4() {
   const itemsImage = [
     {
-      id: 27,
+      id: "27",
       image: "/img/page_3/D_NQ_NP720296-MLA80434081638_112024-B.webp",
     },
     {
-      id: 28,
+      id: "28",
       image: "/img/page_3/D_NQ_NP612329-MLA80434063492_112024-B.webp",
     },
   ];

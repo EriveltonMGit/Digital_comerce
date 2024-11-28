@@ -1,8 +1,8 @@
 
 import { useRef } from "react";
-import './Page_5.css'
+import './Page_9.css'
 import { FaHeart } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+
 // Definindo a interface para o item do carrinho
 interface CartItem {
   id: string;
@@ -19,110 +19,110 @@ interface ProductCarouselProps {
 
 const products: CartItem[] = [
   {
-    id: "29",
-    name: "Maquina De Lavar Roupas Colormaq Automática 11,5 Kg",
-    image: "/img/page_5/products/D_NQ_NP_623411-MLB74746264755_022024-O.webp",
+    id: "61",
+    name: "Jogo De Cama Pratic Casal King Conjunto Promocional",
+    image: "/img/page_9/products/D_NQ_NP_833231-MLB45755206600_042021-O.webp",
     delivery: "/img/icons/full.png",
-    price: 1399,
-    discount: "De R$ 1500 ",
-    category: "Eletrodomesticos",
+    price: 168,
+    discount: "De R$ 230 ",
+    category: "Smartphones",
   },
   {
-    id: "30",
-    name: "Cafeteira Nespresso Vertuo Pop Preto 220v",
-    image: "/img/page_5/products/D_NQ_NP_856942-MLU75357674141_032024-O.webp",
+    id: "62",
+    name: "Xiaomi Redimi 13c 256gb 8gb Ram Global + Nota Fiscal + Fone",
+    image: "/img/page_3/products/D_NQ_NP_945155-MLB80003110267_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 260,
-    discount: "De R$ 299",
-    category: "Eletrodomesticos",
+    price: 1256,
+    discount: "De R$ 1320",
+    category: "SmartPhones",
   },
   {
-    id: "31",
-    name: "Fritadeira Sem Óleo Air Fryer 3,5l Mondial Preto/inox 1500w Af-31",
-    image: "/img/page_5/products/D_NQ_NP_708221-MLB52679584793_122022-O.webp",
+    id: "63",
+    name: "Xiaomi Redmi Note 13 256gb 8gb Ram Camera Top 108mpx +brind",
+    image: "/img/page_3/products/D_NQ_NP_678175-MLB79435931762_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price:213,
-    discount: "De R$ 180",
-    category: "Eletrodomesticos",
+    price: 1315,
+    discount: "De R$ 1430",
+    category: "SmartPhones",
   },
   {
-    id: "32",
-    name: "Tênis Oakley Stratus Masculino Adulto Casual Sintético",
-    image: "/public/img/page_5/products/D_NQ_NP_984782-MLB80616988679_112024-O.webp",
+    id: "64",
+    name: "Tablet Positivo Vision Tab 10 4gb 128gb 10,1 Hd Ips Preto",
+    image: "/img/page_3/products/D_NQ_NP_839193-MLB74210683498_012024-O.webp",
     delivery: "/img/icons/full.png",
-    price:400,
-    discount: "De R$ 620",
-    category: "Acessorios",
+    price:912,
+    discount: "De R$ 1100",
+    category: "SmartPhones",
   },
   {
-    id: "32",
-    name: "Kit 2 Suplementos Pretorian Iso Protein Blend Complex Sabor Chocolate 2kg",
-    image: "/img/page_5/products/D_NQ_NP_922704-MLA79131096681_092024-O.webp",
+    id: "65",
+    name: "Guitarra Telecaster Seven Stc-307 Lh Canhoto C/ Bag Cor Âmbar",
+    image: "/img/page_3/products/D_NQ_NP_676861-MLA80956236533_112024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 162,
-    discount: "200",
-    category: "Suplementos",
+    price: 870,
+    discount: "998",
+    category: "Instrumentos",
   },
   {
-    id: "33",
-    name: "Creatina 100% Pura Monohidratada FTW 300g Aprovada Sabor Neutro",
-    image: "/img/page_5/products/D_NQ_NP_726671-MLA79372127728_092024-O.webp",
+    id: "66",
+    name: "Guitarra elétrica Jackson JS Series JS22 DKA dinky de choupo snow white brilhante com diapasão de amaranto",
+    image: "/img/page_3/products/D_NQ_NP_863465-MLA74779497997_022024-O.webp",
     delivery: "/img/icons/full.png",
-    price:43,
-    discount: "De 67",
-    category: "Suplementos",
+    price:2206,
+    discount: "De 2.700",
+    category: "Instrumentos",
   },
   {
-    id: "34",
-    name: "Beta Alanina 100% Pure 500g Dark Lab",
-    image: "/img/page_5/products/D_NQ_NP_642664-MLU76438733224_052024-O.webp",
+    id: "67",
+    name: "Serra Mármore 4.3/8 4100nh3z 1.300w Makita 220v",
+    image: "/img/page_3/products/D_NQ_NP_871242-MLU76219023004_052024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 58,
-    discount: "De R$ 78",
-    category: "Suplementos",
+    price: 439,
+    discount: "De R$ 510",
+    category: "Ferramentas",
   },
   {
-    id: "35",
-    name: "RM Árvore De Natal Pinheiro Luxo 540 Galhos Verde 1,80m",
-    image: "/img/page_5/products/D_NQ_NP_879592-MLB48068325080_102021-O.webp",
+    id: "68",
+    name: "Furadeira De Impacto 3/8 10mm Gsb450 Re 127v Bosch Com Jogo De Brocas Bits E Buchas 300 Peças The Black Tools",
+    image: "/img/page_3/products/D_NQ_NP_921231-MLU79228400765_092024-O.webp",
     delivery: "/img/icons/full.png",
-    price:178,
+    price:378,
     discount: "De R$ 412",
-    category: "Natal",
+    category: "Ferramentas",
   },
   {
-    id: "36",
-    name: "Guirlanda Natal Enfeite Decoração Natalina Porta Galhos Luxo",
-    image: "/img/page_5/products/D_NQ_NP_631377-MLB80829703673_112024-O.webp",
+    id: "69",
+    name: "Furadeira E Parafusadeira De Impacto 1/2 Gsb 183 Li 18v Com Carregador Bivolt Bateria E Maleta Bosch",
+    image: "/img/page_3/products/D_NQ_NP_915856-MLA80174257891_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 79,
-    discount: "De R$ 120",
-    category: "Natal",
+    price: 667,
+    discount: "De R$ 713",
+    category: "Ferramentas",
   },
   {
-    id: "37",
-    name: "Tênis De Corrida Masculino Mizuno Vitality 4",
-    image: "/img/page_5/products/D_NQ_NP_943091-MLB71728294369_092023-O.webp",
+    id: "70",
+    name: "Perfume Feminino La Vie Est Belle Lancôme EDP 100ml",
+    image: "/img/page_3/products/D_NQ_NP_934059-MLA80281737621_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 199,
-    discount: "De R$ 246",
-    category: "Calcados",
+    price: 534,
+    discount: "De R$ 730",
+    category: "Perfumes",
   },
   {
-    id: "38",
-    name: "Tênis Nike Court Royale 2 Next Nature Masculino",
-    image: "/public/img/page_5/products/D_NQ_NP_884673-MLB68963285072_042023-O.webp",
+    id: "71",
+    name: "Carolina Herrera Good Girl Tradicional EDP 150ml para feminino",
+    image: "/public/img/page_3/products/D_NQ_NP_950204-MLA49695604575_042022-O.webp",
     delivery: "/img/icons/full.png",
-    price:423,
-    discount: "De R$ 480",
-    category: "Calcados",
+    price: 650,
+    discount: "De R$ 740",
+    category: "Perfumes",
   },
 ];
 
 
 
 
-function Page_5({ addToCart }: ProductCarouselProps) {
+function Page_9({ addToCart }: ProductCarouselProps) {
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -178,11 +178,11 @@ function Page_5({ addToCart }: ProductCarouselProps) {
 
     return (  
         <>
-         <section className="section_5">
-        {/* TITULO */}
-        <div className="title_">
-          <h1>PRODUTOS MELHOR AVALIADOS < FaStar className="star"/></h1>
-        </div>
+         <section className="section_9">
+          <div className="title_">
+       <h1 >CAMA, MESA E BANHO</h1>      
+          </div>
+      
         {/*  card ofertas  */}
         <div className="card_ofertas">
           <div className="product-carousel-container">
@@ -242,6 +242,6 @@ function Page_5({ addToCart }: ProductCarouselProps) {
     );
 }
 
-export default Page_5;
+export default Page_9;
 <>
 </>

@@ -13,6 +13,7 @@ import Page_5 from "./Templates/Page_5/Page_5";
 import Page_6 from "./Templates/Page_6/Page_6";
 import Page_7 from "./Templates/Page_7/Page_7";
 import Page_8 from "./Templates/Page_8/Page_8";
+import Page_9 from "./Templates/Page_9/Page_9";
 
 // Definindo a interface para os itens do carrinho
 interface CartItem {
@@ -97,6 +98,7 @@ export default function App() {
       <Page_6 addToCart={addToCart} />
       <Page_7 addToCart={addToCart}/>
       <Page_8/>
+      <Page_9 addToCart={addToCart}/>
     </section>
   );
 }
