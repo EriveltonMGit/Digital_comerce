@@ -32,14 +32,12 @@
 
 #mensagemRemoveCartProdutos{
   position: fixed;
-  margin-top: 25vh;
+  margin-top: 10vh;
   width: auto;
-
-  background-color: #d80b0b;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 45%;
+  margin-left:15vw;
   padding: 0.5rem;
   border-radius: 10px;
   z-index: 9990;
@@ -47,4 +45,59 @@
   color: white;
   animation: slideMensagem 1s linear;
   display: none;
+}
+
+/* MIDIA SCREEN  */
+@media (max-width:480px){
+  
+/* mensagemCartProdutos */
+#mensagemCartProdutos{
+  position: fixed;
+  margin-top: 10vh;
+  width: auto;
+
+  background-color: #45d80b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20vw;
+ 
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 999;
+  font-family: "Sora-VariableFont_wght";
+  font-size: 3vw;
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+
+@keyframes slideMensagem {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+ 
+}
+
+
+#mensagemRemoveCartProdutos{
+  position: fixed;
+  margin-top: 10vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:20vw;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  font-size: 3vw;
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
 }

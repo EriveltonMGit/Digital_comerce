@@ -166,7 +166,7 @@ function ProductCarousel({ addToCart }: ProductCarouselProps) {
     const fa = document.getElementById(`favoritos`);
     if (favoritos) {
       favoritos.style.display = "flex";
-      favoritos.style.marginTop = "22vh";
+      
       setTimeout(() => {
         favoritos.style.display = "none";
       }, 4000);
