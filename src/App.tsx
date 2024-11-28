@@ -10,6 +10,9 @@ import MensagemProducts from "./Components/MensagemProducts/MensagemProdutos";
 import Page_3 from "./Templates/Page_3/Page_3";
 import Page_4 from "./Templates/Page_4/Page_4";
 import Page_5 from "./Templates/Page_5/Page_5";
+import Page_6 from "./Templates/Page_6/Page_6";
+import Page_7 from "./Templates/Page_7/Page_7";
+import Page_8 from "./Templates/Page_8/Page_8";
 
 // Definindo a interface para os itens do carrinho
 interface CartItem {
@@ -90,7 +93,10 @@ export default function App() {
       <ProductCarousel addToCart={addToCart} />
       <Page_3 addToCart={addToCart}/>
       <Page_4/>
-      <Page_5/>
+      <Page_5 addToCart={addToCart}/>
+      <Page_6 addToCart={addToCart} />
+      <Page_7 addToCart={addToCart}/>
+      <Page_8/>
     </section>
   );
 }

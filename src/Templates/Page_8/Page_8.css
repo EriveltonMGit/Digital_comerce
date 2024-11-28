@@ -1,0 +1,10 @@
+
+
+/* section_8 */
+.section_8{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

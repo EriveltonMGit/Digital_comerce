@@ -1,7 +1,7 @@
 
 
 /* section_5 */
-.section_5{
+.section_7 {
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -17,7 +17,7 @@
 
 
 /* title_ */
-.section_5 .title_{
+.section_7  .title_{
     width: 100%;
     height: 15%;
    
@@ -46,7 +46,7 @@
 }
 
 /* card_ofertas */
-.section_5 .card_ofertas{
+.section_7  .card_ofertas{
     width: auto;
     height: 80%;
    
@@ -58,7 +58,7 @@
 }
 
 /* Container principal do carrossel */
-.section_5 .product-carousel-container {
+.section_7  .product-carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +73,7 @@
   }
   
   /* Track do carrossel */
-  .section_5 .carousel-track {
+  .section_7  .carousel-track {
     display: flex;
     gap: 20px;
     overflow: hidden;
@@ -85,7 +85,7 @@
   }
   
   /* Botões de controle */
-  .section_5.carousel-control-btn {
+  .section_7 .carousel-control-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -102,22 +102,22 @@
    
   }
   
-  .section_5 .carousel-control-btn.left {
+  .section_7 .carousel-control-btn.left {
     left: -5px;
   }
   
-  .section_5 .carousel-control-btn.right {
+  .section_7   .carousel-control-btn.right {
     right: -5px;
   }
   
-  .section_5 .carousel-control-btn:hover {
+  .section_7   .carousel-control-btn:hover {
     background-color: var(--bk-color-yellow);
     color: #fff;
     transition: 0.3s;
   }
   
   /* Card individual */
-  .section_5 .carousel-card {
+  .section_7   .carousel-card {
     flex: 0 0 300px;
     background-color: #fff;
     border-radius: 10px;
@@ -132,12 +132,12 @@
     justify-content: center;
   }
   
-  .section_5 .carousel-card:hover {
+  .section_7   .carousel-card:hover {
     transform: scale(1.05);
   }
   
   /* Imagem do card */
-  .section_5 .carousel-card-img {
+  .section_7   .carousel-card-img {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,13 +145,13 @@
     object-fit: cover;
     transition: 0.5s;
   }
-  .section_5 .carousel-card:hover .carousel-card-img {
+  .section_7   .carousel-card:hover .carousel-card-img {
     scale: 1.3;
     rotate: 10deg;
   }
   
   /* Conteúdo do card */
-  .section_5 .carousel-card-body {
+  .section_7   .carousel-card-body {
     padding: 10px;
     text-align: center;
     height: 45%;
@@ -166,7 +166,7 @@
     color: var(--bk-color);
   }
   
-  .section_5 .carousel-card-title {
+  .section_7   .carousel-card-title {
     font-size: 1.2vw;
     font-weight: bold;
     margin-bottom: 5px;
@@ -177,7 +177,7 @@
     backdrop-filter: blur(100px);
   }
   
-  .section_5 .carousel-card-price {
+  .section_7   .carousel-card-price {
     font-size: 1rem;
     color: #007bff;
     font-weight: bold;
@@ -217,7 +217,7 @@
       border-radius: 5px;
     }
   }
-  .section_5.delivery {
+  .section_7  .delivery {
     width: 50%;
     height: 8vh;
     display: flex;
@@ -234,7 +234,7 @@
   }
   
   /* favoritos */
-  .section_5 .favoritos {
+  .section_7   .favoritos {
     position: absolute;
     top: 0;
     right: 0;
@@ -246,15 +246,15 @@
     display: none;
     object-fit: cover;
   }
-  .section_5 .favoritos:hover {
+  .section_7   .favoritos:hover {
     color: red;
   }
-  .section_5 .carousel-card:hover .favoritos {
+  .section_7   .carousel-card:hover .favoritos {
     display: block;
   }
   
   /* add-to-cart-btn */
-  .section_5 .add-to-cart-btn {
+  .section_7   .add-to-cart-btn {
     background-color: var(--bk-color-yellow);
     font-family: "Purista";
     font-family: 1.2vw;
@@ -268,7 +268,7 @@
   /* /* =============MIDIA SCREM ================= */
   @media (max-width:480px){
     /* Container principal do carrossel */
-    .section_5 .product-carousel-container {
+    .section_7   .product-carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +284,7 @@
     border-radius: 10px;
   }
   /* title_ */
-  .section_5 .title_{
+  .section_7  .title_{
   width: 100%;
   height: 15%;
  margin-top: 5vh;
@@ -307,7 +307,7 @@
 }
 
   /* Track do carrossel */
-  .section_5 .carousel-track {
+  .section_7  .carousel-track {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -321,7 +321,7 @@
   }
   
   /* Botões de controle */
-  .section_5  .carousel-control-btn {
+  .section_7   .carousel-control-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -338,22 +338,22 @@
    
   }
   
-  .section_5 .carousel-control-btn.left {
+  .section_7  .carousel-control-btn.left {
     left: -5px;
   }
   
-  .section_5 .carousel-control-btn.right {
+  .section_7  .carousel-control-btn.right {
     right: -5px;
   }
   
-  .section_5 .carousel-control-btn:hover {
+  .section_7  .carousel-control-btn:hover {
     background-color: var(--bk-color-yellow);
     color: #fff;
     transition: 0.3s;
   }
   
   /* Card individual */
-  .section_5  .carousel-card {
+  .section_7   .carousel-card {
     flex: 0 0 300px;
     background-color: #fff;
     border-radius: 10px;
@@ -369,12 +369,12 @@
     
   }
   
-  .section_5 .carousel-card:hover {
+  .section_7  .carousel-card:hover {
     transform: scale(1.05);
   }
   
   /* Imagem do card */
-  .section_5  .carousel-card-img {
+  .section_7   .carousel-card-img {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -382,13 +382,13 @@
     object-fit: cover;
     transition: 0.5s;
   }
-  .section_5  .carousel-card:hover .carousel-card-img {
+  .section_7   .carousel-card:hover .carousel-card-img {
     scale: 1.3;
     rotate: 10deg;
   }
   
   /* Conteúdo do card */
-  .section_5  .carousel-card-body {
+  .section_7   .carousel-card-body {
     padding: 10px;
     text-align: center;
     height: 45%;
@@ -404,7 +404,7 @@
   
   }
   
-  .section_5  .carousel-card-title {
+  .section_7   .carousel-card-title {
     font-size: 4vw;
     font-weight: bold;
     margin-bottom: 5px;
@@ -415,7 +415,7 @@
     backdrop-filter: blur(100px);
   }
   
-  .section_5  .carousel-card-price {
+  .section_7   .carousel-card-price {
     font-size: 1rem;
     color: #007bff;
     font-weight: bold;
@@ -456,7 +456,7 @@
       border: 1px solid var(--bk-color-yellow);
     }
   }
-  .section_5  .delivery {
+  .section_7   .delivery {
     width: 50%;
     height: 8vh;
     display: flex;
@@ -476,7 +476,7 @@
   }
   
   /* favoritos */
-  .section_5  .favoritos {
+  .section_7   .favoritos {
     position: absolute;
     top: 0;
     right: 0;
@@ -488,15 +488,15 @@
     display: none;
     object-fit: cover;
   }
-  .section_5  .favoritos:hover {
+  .section_7   .favoritos:hover {
     color: red;
   }
-  .section_5  .carousel-card:hover .favoritos {
+  .section_7   .carousel-card:hover .favoritos {
     display: block;
   }
   
   /* add-to-cart-btn */
-  .section_5 .add-to-cart-btn {
+  .section_7  .add-to-cart-btn {
     background-color: var(--bk-color-yellow);
     font-family: "Purista";
     font-family: 1.2vw;

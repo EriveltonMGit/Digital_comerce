@@ -1,8 +1,8 @@
 
 import { useRef } from "react";
-import './Page_5.css'
+import './Page_7.css'
 import { FaHeart } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+
 // Definindo a interface para o item do carrinho
 interface CartItem {
   id: string;
@@ -19,7 +19,7 @@ interface ProductCarouselProps {
 
 const products: CartItem[] = [
   {
-    id: "29",
+    id: "50",
     name: "Samsung Galaxy S23 FE 5G Dual SIM 128 GB Verde 8 GB RAM",
     image: "/img/page_3/products/D_NQ_NP_764549-MLA79439802094_102024-O.webp",
     delivery: "/img/icons/full.png",
@@ -28,7 +28,7 @@ const products: CartItem[] = [
     category: "Smartphones",
   },
   {
-    id: "30",
+    id: "51",
     name: "Xiaomi Redimi 13c 256gb 8gb Ram Global + Nota Fiscal + Fone",
     image: "/img/page_3/products/D_NQ_NP_945155-MLB80003110267_102024-O.webp",
     delivery: "/img/icons/full.png",
@@ -37,7 +37,7 @@ const products: CartItem[] = [
     category: "SmartPhones",
   },
   {
-    id: "31",
+    id: "52",
     name: "Xiaomi Redmi Note 13 256gb 8gb Ram Camera Top 108mpx +brind",
     image: "/img/page_3/products/D_NQ_NP_678175-MLB79435931762_102024-O.webp",
     delivery: "/img/icons/full.png",
@@ -46,7 +46,7 @@ const products: CartItem[] = [
     category: "SmartPhones",
   },
   {
-    id: "32",
+    id: "53",
     name: "Tablet Positivo Vision Tab 10 4gb 128gb 10,1 Hd Ips Preto",
     image: "/img/page_3/products/D_NQ_NP_839193-MLB74210683498_012024-O.webp",
     delivery: "/img/icons/full.png",
@@ -55,7 +55,7 @@ const products: CartItem[] = [
     category: "SmartPhones",
   },
   {
-    id: "32",
+    id: "54",
     name: "Guitarra Telecaster Seven Stc-307 Lh Canhoto C/ Bag Cor Âmbar",
     image: "/img/page_3/products/D_NQ_NP_676861-MLA80956236533_112024-O.webp",
     delivery: "/img/icons/full.png",
@@ -64,7 +64,7 @@ const products: CartItem[] = [
     category: "Instrumentos",
   },
   {
-    id: "33",
+    id: "55",
     name: "Guitarra elétrica Jackson JS Series JS22 DKA dinky de choupo snow white brilhante com diapasão de amaranto",
     image: "/img/page_3/products/D_NQ_NP_863465-MLA74779497997_022024-O.webp",
     delivery: "/img/icons/full.png",
@@ -73,7 +73,7 @@ const products: CartItem[] = [
     category: "Instrumentos",
   },
   {
-    id: "34",
+    id: "56",
     name: "Serra Mármore 4.3/8 4100nh3z 1.300w Makita 220v",
     image: "/img/page_3/products/D_NQ_NP_871242-MLU76219023004_052024-O.webp",
     delivery: "/img/icons/full.png",
@@ -82,7 +82,7 @@ const products: CartItem[] = [
     category: "Ferramentas",
   },
   {
-    id: "35",
+    id: "57",
     name: "Furadeira De Impacto 3/8 10mm Gsb450 Re 127v Bosch Com Jogo De Brocas Bits E Buchas 300 Peças The Black Tools",
     image: "/img/page_3/products/D_NQ_NP_921231-MLU79228400765_092024-O.webp",
     delivery: "/img/icons/full.png",
@@ -91,7 +91,7 @@ const products: CartItem[] = [
     category: "Ferramentas",
   },
   {
-    id: "36",
+    id: "58",
     name: "Furadeira E Parafusadeira De Impacto 1/2 Gsb 183 Li 18v Com Carregador Bivolt Bateria E Maleta Bosch",
     image: "/img/page_3/products/D_NQ_NP_915856-MLA80174257891_102024-O.webp",
     delivery: "/img/icons/full.png",
@@ -100,7 +100,7 @@ const products: CartItem[] = [
     category: "Ferramentas",
   },
   {
-    id: "37",
+    id: "59",
     name: "Perfume Feminino La Vie Est Belle Lancôme EDP 100ml",
     image: "/img/page_3/products/D_NQ_NP_934059-MLA80281737621_102024-O.webp",
     delivery: "/img/icons/full.png",
@@ -109,7 +109,7 @@ const products: CartItem[] = [
     category: "Perfumes",
   },
   {
-    id: "38",
+    id: "60",
     name: "Carolina Herrera Good Girl Tradicional EDP 150ml para feminino",
     image: "/public/img/page_3/products/D_NQ_NP_950204-MLA49695604575_042022-O.webp",
     delivery: "/img/icons/full.png",
@@ -122,7 +122,7 @@ const products: CartItem[] = [
 
 
 
-function Page_5({ addToCart }: ProductCarouselProps) {
+function Page_7({ addToCart }: ProductCarouselProps) {
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -178,11 +178,8 @@ function Page_5({ addToCart }: ProductCarouselProps) {
 
     return (  
         <>
-         <section className="section_5">
-        {/* TITULO */}
-        <div className="title_">
-          <h1>PRODUTOS MELHOR AVALIADOS < FaStar className="star"/></h1>
-        </div>
+         <section className="section_7">
+       
         {/*  card ofertas  */}
         <div className="card_ofertas">
           <div className="product-carousel-container">
@@ -242,6 +239,6 @@ function Page_5({ addToCart }: ProductCarouselProps) {
     );
 }
 
-export default Page_5;
+export default Page_7;
 <>
 </>
