@@ -370,8 +370,9 @@ height: 10vh;
     font-family: "Purista";
     background-color: var(--bk-color);
     width: 90%;
-    font-size: 6vw;
+    font-size: 5vw;
     border-radius: 5px;
+    border: 1px solid var(--bk-color-yellow);
   }
 }
 .delivery {

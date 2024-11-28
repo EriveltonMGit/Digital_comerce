@@ -63,7 +63,13 @@ function Nav() {
             </button>
           </form>
           {/* aqui fica o button hamburguer */}
-          <button className="btn_hamburguer">< GiHamburgerMenu  /></button>
+          <div className="area-btn_device">
+          <button className="carrinho_produtos" onClick={abrirCart}>
+              <FiShoppingCart />{" "}
+            </button>
+            <button className="btn_hamburguer">< GiHamburgerMenu  /></button>  
+          </div>
+        
           {/* btn_group */}
           <div className="btn_group">
             <button>

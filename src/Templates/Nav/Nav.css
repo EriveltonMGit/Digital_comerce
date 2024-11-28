@@ -312,10 +312,22 @@
   z-index: 9999;
 }
 /* AQUI FICA O BTN HAMBURGUER */
-.btn_hamburguer{
-color: white;
-font-size: 7vw;
+.area-btn_device{
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  color: white;
+
+  button{
+    color: white;
+    font-size: 7vw;
+    }
+
+
+
 }
+
 
 /* AQUI FICA A DIV DOS BUTTON CARRINHO E INPUT */
 .area_content {

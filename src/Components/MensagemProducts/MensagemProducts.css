@@ -64,7 +64,7 @@
  
   padding: 0.5rem;
   border-radius: 10px;
-  z-index: 999;
+  z-index: 9990;
   font-family: "Sora-VariableFont_wght";
   font-size: 3vw;
   color: white;
@@ -96,6 +96,7 @@
   z-index: 9990;
   font-family: "Sora-VariableFont_wght";
   font-size: 3vw;
+  background-color: red;
   color: white;
   animation: slideMensagem 1s linear;
   display: none;
