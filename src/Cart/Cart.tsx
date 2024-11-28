@@ -17,8 +17,17 @@ interface CartProps {
 function Cart({ cartItems, removeFromCart }: CartProps) {
   // Função para calcular o total dos produtos
   const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + (parseFloat(item.price.toString()) || 0), 0);
+    return cartItems.reduce((total, item) => total + item.price, 0);
   };
+
+  // Função para formatar o preço no padrão brasileiro
+  function formatPrice(price: number): string {
+    return price.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+      minimumFractionDigits: 2,
+    });
+  }
 
   return (
     <section className="cart" id="cart_model">
@@ -28,7 +37,8 @@ function Cart({ cartItems, removeFromCart }: CartProps) {
             <img src={item.image} alt={item.name} />
             <div className="cart_info">
               <p>{item.name}</p>
-              <span>1x R$ : {item.price.toFixed(2)}</span>
+              {/* Formatação de preço individual */}
+              <span>1x {formatPrice(item.price)}</span>
               <button onClick={() => removeFromCart(index)}>
                 <IoBagRemove />
               </button>
@@ -39,9 +49,9 @@ function Cart({ cartItems, removeFromCart }: CartProps) {
         <p>Carrinho vazio!</p>
       )}
 
-      {/* Exibindo o total diretamente */}
+      {/* Exibindo o total formatado */}
       <div className="totalPrice">
-        <h3>Total: R$ {calculateTotal().toFixed(2)}</h3>
+        <h3>Total: {formatPrice(calculateTotal())}</h3>
       </div>
     </section>
   );

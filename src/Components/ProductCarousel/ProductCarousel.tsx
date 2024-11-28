@@ -53,7 +53,7 @@ const products: CartItem[] = [
     image:
       "/img/page_2/produtocts/D_NQ_NP_746941-MLU77156916376_072024-O.webp",
       delivery: "/img/icons/full.png",
-    price: 6999,
+    price: 6993.0,
     discount: "De R$ 7500,00",
     category: "SmartPhones",
   },
@@ -134,7 +134,7 @@ function ProductCarousel({ addToCart }: ProductCarouselProps) {
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
       minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
+      maximumFractionDigits: 3,
     });
   }
 

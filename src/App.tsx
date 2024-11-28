@@ -7,6 +7,9 @@ import Page_2 from "./Templates/Page_2/Page_2";
 import ProductCarousel from "./Components/ProductCarousel/ProductCarousel";
 import Menagem from "./Components/MensagemAviso/MensagemFavoritos";
 import MensagemProducts from "./Components/MensagemProducts/MensagemProdutos";
+import Page_3 from "./Templates/Page_3/Page_3";
+import Page_4 from "./Templates/Page_4/Page_4";
+import Page_5 from "./Templates/Page_5/Page_5";
 
 // Definindo a interface para os itens do carrinho
 interface CartItem {
@@ -85,6 +88,9 @@ export default function App() {
       <MiniCards addToCart={addToCart} />
       <Page_2 />
       <ProductCarousel addToCart={addToCart} />
+      <Page_3 addToCart={addToCart}/>
+      <Page_4/>
+      <Page_5/>
     </section>
   );
 }

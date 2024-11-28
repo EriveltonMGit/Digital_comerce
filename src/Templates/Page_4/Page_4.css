@@ -1,0 +1,275 @@
+/* section_4 */
+.section_4 {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* categorias */
+.section_4 .categorias {
+
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  h1 {
+    overflow: hidden;
+    font-size: 2vw;
+    font-family: "Proelium";
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+/* grup_categorias */
+.grup_categorias {
+  
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+
+.grup_categorias div{
+    
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 98%;
+    p{
+        width: 100%;
+        font-size: 0.8vw;
+        margin-top: 1vh;
+        text-align: center;
+        font-family: 'Gotham';
+    }
+    
+    button{
+      
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+/* double_image */
+.double_image {
+  width: 100%;
+  height: 65%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.double_image .card_ {
+  
+  width: 48%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+ 
+
+  img {
+    width: 100%;
+border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .btn_marcas {
+  
+    left: 0;
+    bottom: 0;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+    font-family: 'Gotham';
+    overflow: hidden;
+    margin-top: 2vh;
+    width: 35%;
+    border-radius: 10px;
+    background-color: var(--bk-color-yellow);
+    padding: 0.5rem;
+    transition: 0.5s all;
+    border: 1px solid var( --gray);
+    
+  }
+  .btn_marcas:hover{
+    background-color: var( --bk-color-yellow);
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.418);
+    
+  }
+}
+
+
+
+
+
+
+
+
+/* ===============MIDIA SCREN ================= */
+@media(max-width:480px){
+    /* section_4 */
+.section_4 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  
+  /* categorias */
+  .section_4 .categorias {
+    margin-top: 10vh;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      overflow: hidden;
+      font-family: "Proelium";
+      font-size: 12vw;
+      text-align: center;
+    }
+  }
+  
+  /* grup_categorias */
+  .grup_categorias {
+    
+    width: 100%;
+    height: 20%;
+    gap: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .grup_categorias div{
+  
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    margin-bottom: 2vh;
+      position: relative;
+      overflow: hidden;
+      height: 98%;
+      padding: 1rem;
+      p{
+          width: 100%;
+          font-size: 4vw;
+          margin-top: 1vh;
+          text-align: center;
+          font-family: 'Gotham';
+      }
+      img{
+        width: 100%;
+        height: 15vh;
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      button{
+        
+          width: 100%;
+          border-radius: 20px;
+          overflow: hidden;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* double_image */
+  .double_image {
+    width: 100%;
+    height: 65%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .double_image .card_ {
+    
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+   
+  
+    img {
+      width: 100%;
+  border-radius: 10px;
+      object-fit: cover;
+    }
+  
+    .btn_marcas {
+    
+      left: 0;
+      bottom: 0;
+      margin-left: 2vw;
+      margin-bottom: 3vh;
+      font-family: 'Gotham';
+      overflow: hidden;
+      margin-top: 2vh;
+      width: 90%;
+      border-radius: 10px;
+      background-color: var(--bk-color);
+      padding: 0.5rem;
+      color: var(--white);
+      transition: 0.5s all;
+      border: 1px solid var( --gray);
+      
+    }
+    .btn_marcas:hover{
+      background-color: var( --bk-color-yellow);
+      box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.418);
+      color: var(--bk-color);
+      
+    }
+  }
+  
+}
+
+
+

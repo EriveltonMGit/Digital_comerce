@@ -59,13 +59,14 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   overflow-x: hidden;
-  
+  font-family: 'Gotham';
 }
 
 
 a {
   
   text-decoration: none;
+  font-family: 'Gotham';
 }
 
 li {

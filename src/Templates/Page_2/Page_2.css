@@ -8,6 +8,9 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 
 /* section_card_top */
@@ -18,13 +21,13 @@
   padding: 0 !important;
   position: absolute;
   top: 0;
-  height: 40vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: var(--bk-color);
   overflow: hidden;
-  
+  border-radius: 5px;
 }
 
 /* card_text */
