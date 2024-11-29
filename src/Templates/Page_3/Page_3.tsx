@@ -109,7 +109,7 @@ const products: CartItem[] = [
   {
     id: "26",
     name: "Carolina Herrera Good Girl Tradicional EDP 150ml para feminino",
-    image: "/public/img/page_3/products/D_NQ_NP_950204-MLA49695604575_042022-O.webp",
+    image: "/img/page_3/products/D_NQ_NP_950204-MLA49695604575_042022-O.webp",
     delivery: "/img/icons/full.png",
     price: 650,
     discount: "De R$ 740",
@@ -118,8 +118,11 @@ const products: CartItem[] = [
 ];
 // IMPORT CSS
 import "./Page_3.css";
-
+import { useNavigate } from "react-router-dom";
 function Page_3({ addToCart }: ProductCarouselProps) {
+
+  const navigate = useNavigate();
+
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -172,6 +175,10 @@ function Page_3({ addToCart }: ProductCarouselProps) {
   return (
     <>
       <section className="section_3">
+
+
+
+
         {/* TITULO */}
         <div className="title_">
           <h1>OFERTAS RELÂMPAGO</h1>
@@ -192,6 +199,12 @@ function Page_3({ addToCart }: ProductCarouselProps) {
                     alt={product.name}
                     className="carousel-card-img"
                   />
+                   <button
+              className="btn_exibir"
+              onClick={() => navigate(`/product/${product.id}/${encodeURIComponent(product.name)}`)}
+            >
+              Visualizar
+            </button>
                   <div className="carousel-card-body">
                     <h5 className="carousel-card-title">{product.name}</h5>
 

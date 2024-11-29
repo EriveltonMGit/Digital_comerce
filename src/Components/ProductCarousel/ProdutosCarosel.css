@@ -91,6 +91,37 @@ height: 10vh;
   rotate: 10deg;
 }
 
+/* btn_exibir */
+.btn_exibir{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 72%;
+  background-color: var(--success);
+  width: 80%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+ z-index: 20;
+ overflow: hidden;
+ font-size: 1vw;
+ font-family: 'Purista';
+ text-align: center;
+ 
+}
+.btn_exibir:hover{
+  background-color: var(--bk-color);
+  color: var(--success);
+}
+.carousel-card:hover .btn_exibir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 /* Conteúdo do card */
 .carousel-card-body {
   padding: 10px;
@@ -218,11 +249,12 @@ height: 10vh;
   position: relative;
   max-width: 90%;
   margin: 0 auto;
-  height: 75vh;
+  height: 65vh;
   margin-top: 5vh;
   overflow: hidden;
   background-color: #f9f9f9;
   border-radius: 10px;
+ 
 }
 
 /* Track do carrossel */
@@ -250,19 +282,21 @@ height: 10vh;
   padding: 10px 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  font-size: 20px;
-height: 10vh;
+  font-size: 3vw;
+height: 7vh;
   font-weight: bold;
   z-index: 2;
+  
  
 }
 
 .carousel-control-btn.left {
-  left: -5px;
+  left: -10px;
+ 
 }
 
 .carousel-control-btn.right {
-  right: -5px;
+  right: -10px;
 }
 
 .carousel-control-btn:hover {
@@ -294,17 +328,59 @@ height: 10vh;
 
 /* Imagem do card */
 .carousel-card-img {
-  width: 100%;
+  width: 55vw;
+ 
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
+  margin-top: 3vh;
   object-fit: cover;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .carousel-card:hover .carousel-card-img {
   scale: 1.3;
   rotate: 10deg;
 }
+
+
+
+/* btn_exibir */
+.btn_exibir{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 74%;
+  background-color: var(--success);
+  width: 80%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+ z-index: 20;
+ overflow: hidden;
+ font-size: 4vw;
+ font-family: 'Purista';
+ text-align: center;
+ 
+}
+.btn_exibir:hover{
+  background-color: var(--bk-color);
+  color: var(--success);
+}
+.carousel-card:hover .btn_exibir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
 
 /* Conteúdo do card */
 .carousel-card-body {

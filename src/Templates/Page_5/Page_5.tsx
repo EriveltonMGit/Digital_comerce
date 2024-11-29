@@ -20,109 +20,111 @@ interface ProductCarouselProps {
 const products: CartItem[] = [
   {
     id: "29",
-    name: "Maquina De Lavar Roupas Colormaq Automática 11,5 Kg",
-    image: "/img/page_5/products/D_NQ_NP_623411-MLB74746264755_022024-O.webp",
+    name: "Mouse Gamer Para Jogo 3.200 Dpi Óptico Com Led Rgb Usb Exbom",
+    image: "/img/Page_6/products/D_NQ_NP_916293-MLB76747490319_052024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 1399,
-    discount: "De R$ 1500 ",
-    category: "Eletrodomesticos",
+    price: 36,
+    discount: "De R$ 55",
+    category: "Eletronicos",
   },
   {
     id: "30",
-    name: "Cafeteira Nespresso Vertuo Pop Preto 220v",
-    image: "/img/page_5/products/D_NQ_NP_856942-MLU75357674141_032024-O.webp",
+    name: "Mouse Sem Fio Recarregável Wireles Optico Led Rgb Ergonômico",
+    image: "/img/Page_6/products/D_NQ_NP_897691-MLB71229171865_082023-O.webp",
     delivery: "/img/icons/full.png",
-    price: 260,
-    discount: "De R$ 299",
-    category: "Eletrodomesticos",
+    price: 28,
+    discount: "De R$55",
+    category: "Eletronicos",
   },
   {
     id: "31",
-    name: "Fritadeira Sem Óleo Air Fryer 3,5l Mondial Preto/inox 1500w Af-31",
-    image: "/img/page_5/products/D_NQ_NP_708221-MLB52679584793_122022-O.webp",
+    name: "Casaco Jaqueta Puffer Bobojaco Gominho Impermeável Masculino",
+    image: "/img/Page_6/products/D_NQ_NP_732583-MLB69969035981_062023-O.webp",
     delivery: "/img/icons/full.png",
-    price:213,
+    price:92,
     discount: "De R$ 180",
-    category: "Eletrodomesticos",
+    category: "Roupa",
   },
   {
     id: "32",
-    name: "Tênis Oakley Stratus Masculino Adulto Casual Sintético",
-    image: "/public/img/page_5/products/D_NQ_NP_984782-MLB80616988679_112024-O.webp",
+    name: "Super Plus Size Jaqueta Frio Inverno Puffer Bobojaco Gominho",
+    image: "/img/Page_6/products/D_NQ_NP_829250-MLB80097415728_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price:400,
-    discount: "De R$ 620",
-    category: "Acessorios",
-  },
-  {
-    id: "32",
-    name: "Kit 2 Suplementos Pretorian Iso Protein Blend Complex Sabor Chocolate 2kg",
-    image: "/img/page_5/products/D_NQ_NP_922704-MLA79131096681_092024-O.webp",
-    delivery: "/img/icons/full.png",
-    price: 162,
-    discount: "200",
-    category: "Suplementos",
+    price:279,
+    discount: "De R$ 320",
+    category: "Roupa",
   },
   {
     id: "33",
-    name: "Creatina 100% Pura Monohidratada FTW 300g Aprovada Sabor Neutro",
-    image: "/img/page_5/products/D_NQ_NP_726671-MLA79372127728_092024-O.webp",
+    name: "Mountain bike Alfameq Makan aro 29 19",
+    image: "/img/Page_6/products/D_NQ_NP_745783-MLU77398275363_072024-O.webp",
     delivery: "/img/icons/full.png",
-    price:43,
-    discount: "De 67",
-    category: "Suplementos",
+    price: 830,
+    discount: "920",
+    category: "Esporte",
   },
   {
     id: "34",
-    name: "Beta Alanina 100% Pure 500g Dark Lab",
-    image: "/img/page_5/products/D_NQ_NP_642664-MLU76438733224_052024-O.webp",
+    name: "Bicicleta Aro 29 Aço Carbono Ksvj Freios Disco Suspensão 21v",
+    image: "/img/Page_6/products/D_NQ_NP_682905-MLB73104779367_112023-O.webp",
     delivery: "/img/icons/full.png",
-    price: 58,
-    discount: "De R$ 78",
-    category: "Suplementos",
+    price:790,
+    discount: "De 936",
+    category: "Esporte",
   },
   {
     id: "35",
-    name: "RM Árvore De Natal Pinheiro Luxo 540 Galhos Verde 1,80m",
-    image: "/img/page_5/products/D_NQ_NP_879592-MLB48068325080_102021-O.webp",
+    name: "Yamaha Dtx6k-X Negro",
+    image: "/img/Page_6/products/D_NQ_NP_880597-MLU73021737323_112023-O.webp",
     delivery: "/img/icons/full.png",
-    price:178,
-    discount: "De R$ 412",
-    category: "Natal",
+    price:9757,
+    discount: "De R$ 10200",
+    category: "Instruemtos",
   },
   {
     id: "36",
-    name: "Guirlanda Natal Enfeite Decoração Natalina Porta Galhos Luxo",
-    image: "/img/page_5/products/D_NQ_NP_631377-MLB80829703673_112024-O.webp",
+    name: "Bateria Eletronica Revas Roland Pb350 + Estante",
+    image: "/img/Page_6/products//D_NQ_NP_802363-MLB48432623895_122021-O.webp",
     delivery: "/img/icons/full.png",
-    price: 79,
-    discount: "De R$ 120",
-    category: "Natal",
+    price:1649,
+    discount: "De R$ 1890",
+    category: "Instruemtos",
   },
   {
     id: "37",
-    name: "Tênis De Corrida Masculino Mizuno Vitality 4",
-    image: "/img/page_5/products/D_NQ_NP_943091-MLB71728294369_092023-O.webp",
+    name: "Bicicleta Spinning Com Roda De Inércia De 13kg Wct Fitness Cor Preto",
+    image: "/img/Page_6/products/D_NQ_NP_706535-MLA46736414487_072021-O.webp",
     delivery: "/img/icons/full.png",
-    price: 199,
-    discount: "De R$ 246",
-    category: "Calcados",
+    price: 1720,
+    discount: "De R$ 2120",
+    category: "Esporte",
   },
   {
     id: "38",
-    name: "Tênis Nike Court Royale 2 Next Nature Masculino",
-    image: "/public/img/page_5/products/D_NQ_NP_884673-MLB68963285072_042023-O.webp",
+    name: "Patins Roller Inline Infantil Roxo 34 A 37 Menina + Proteção",
+    image: "/public/img/Page_6/products/D_NQ_NP_963989-MLB80962700623_112024-O.webp",
     delivery: "/img/icons/full.png",
-    price:423,
-    discount: "De R$ 480",
+    price: 199,
+    discount: "De R$ 220",
+    category: "Esporte",
+  },
+  {
+    id: "39",
+    name: "Patins Inline Freestyle Traxart Volt + 2.0 Preto - Abec-9",
+    image: "/public/img/Page_6/products/D_NQ_NP_715271-MLB76323203552_052024-O.webp",
+    delivery: "/img/icons/full.png",
+    price:899,
+    discount: "De R$ 970",
     category: "Calcados",
   },
 ];
 
 
-
+import { useNavigate } from "react-router-dom";
 
 function Page_5({ addToCart }: ProductCarouselProps) {
+
+  const navigate = useNavigate();
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -199,6 +201,12 @@ function Page_5({ addToCart }: ProductCarouselProps) {
                     alt={product.name}
                     className="carousel-card-img"
                   />
+                   <button
+              className="btn_exibir"
+              onClick={() => navigate(`/product/${product.id}/${encodeURIComponent(product.name)}`)}
+            >
+              Visualizar
+            </button>
                   <div className="carousel-card-body">
                     <h5 className="carousel-card-title">{product.name}</h5>
 

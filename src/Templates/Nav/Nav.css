@@ -296,6 +296,9 @@
   .btn_hamburguer{
     display:none;
   }
+  .carrinho_produtos_device{
+    display: none;
+  }
 }
 
 @media (max-width:480px){
@@ -305,6 +308,7 @@
   height: 8vh;
   position: fixed;
   top: 0;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,14 +318,17 @@
 /* AQUI FICA O BTN HAMBURGUER */
 .area-btn_device{
   width: 20vw;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content:space-around;
   color: white;
-
+  
   button{
     color: white;
     font-size: 7vw;
+    margin-bottom: 0;
+    
     }
 
 
@@ -353,6 +360,7 @@
   position: relative;
   overflow: hidden;
  margin-left: -4vw;
+
 
   img {
     width: 25vw;
@@ -396,6 +404,7 @@
   outline: none;
   border: none;
   font-size: 3vw;
+  
 }
 
 /* btn_group */
@@ -433,10 +442,17 @@
   }
 }
 
+
+
+
+
+
+
+
 /* AQUI FICA A ÁREA DOS LINKS DO MENU */
 .area_links {
   width: 100%;
-  height: 40%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -446,20 +462,25 @@
 
 /* categories */
 .categories {
-  width: 15%;
-  height: 100%;
+  width: 100%;
+  height: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
  transition: 1s;
  overflow: hidden;
+ border: 1px solid red;
+ 
   ul {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
     
   }
   ul:hover .list_categorys {
@@ -469,8 +490,8 @@
 
   /*  .list_categorys */
   .list_categorys {
-    width: 20%;
-    height: auto;
+    width: 90%;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -479,7 +500,7 @@
     background-color: var(--bk-color-yellow);
     margin-top: 60vh;
     z-index: 800;
-    display: none;
+    border: 1px solid red;
     cursor: pointer;
     gap: 0.5vh;
     padding: 0.5rem;
@@ -523,6 +544,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  display: none;
 
   li {
     width: 100%;
@@ -574,5 +596,14 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
 
 }

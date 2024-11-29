@@ -94,7 +94,8 @@ function Page_1() {
             </button>
           </div>
         </main>
-    
+    {/* MENU DEVICE LISTA */}
+  
         
       </section>
     </>

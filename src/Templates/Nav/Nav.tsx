@@ -1,5 +1,3 @@
-
-
 // IMPORT IMGS
 
 // ICONS REACT
@@ -29,8 +27,10 @@ import { MdContactMail } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 // IMPORT CSS
 import "./Nav.css";
+import MenuDevice from "../../Components/MenuDevice/MenuDevice";
+import Favoritos from "../../Components/Favoritos/Favoritos";
+import { Link } from "react-router-dom";
 function Nav() {
-
   const abrirCart = () => {
     // Obtém o elemento do carrinho pelo ID
     const cartElement = document.getElementById("cart_model");
@@ -40,14 +40,37 @@ function Nav() {
       cartElement.classList.toggle("show_cart");
     }
   };
- 
+
+  //  FUNÇAO PARA ABRIR O MENU DEVICE
+  const abrirMenuDevcie = () => {
+    // Obtém o elemento do carrinho pelo ID
+    const cartElement = document.getElementById("menu_device");
+
+    if (cartElement) {
+      // Alterna a classe de visibilidade
+      cartElement.classList.toggle("show_cart");
+    }
+  };
+
+  const abrirFavoritos = () => {
+    // Obtém o elemento do carrinho pelo ID
+    const cartElement = document.getElementById(`favoritosProdutos`);
+
+    if (cartElement) {
+      // Alterna a classe de visibilidade
+      cartElement.classList.toggle("show_cart");
+    }
+  };
+
   return (
     <>
       <header className="nav_bar">
         {/* conteudo div top */}
         <main className="area_content">
           <div className="logo">
-            <img src="/img/icons/logo.webp" alt="" />
+            <Link to="/">
+              <img src="/img/icons/logo.webp" alt="Logo" />
+            </Link>
           </div>
           {/* search__bar */}
           <form className="search__bar">
@@ -64,12 +87,16 @@ function Nav() {
           </form>
           {/* aqui fica o button hamburguer */}
           <div className="area-btn_device">
-          <button className="carrinho_produtos" onClick={abrirCart}>
+            <button className="carrinho_produtos_device" onClick={abrirCart}>
               <FiShoppingCart />{" "}
             </button>
-            <button className="btn_hamburguer">< GiHamburgerMenu  /></button>  
+            {/* BUTTON PARA ABRIR O MENU DEVICE */}
+            <button className="btn_hamburguer" onClick={abrirMenuDevcie}>
+              <GiHamburgerMenu />
+            </button>
           </div>
-        
+          {/* MENU DEVICE */}
+          <MenuDevice />
           {/* btn_group */}
           <div className="btn_group">
             <button>
@@ -85,45 +112,127 @@ function Nav() {
             <button className="carrinho_produtos" onClick={abrirCart}>
               <FiShoppingCart />{" "}
             </button>
+            {/* BUTTON PARA ABRIR O CARD FAVORITOS */}
             <button>
-              <FaRegHeart id="favoritos" />
+              <FaRegHeart id="favoritos " onClick={abrirFavoritos} />
             </button>
-
+            <Favoritos />
           </div>
         </main>
         {/* conteúdo div bottom */}
-        <main className="area_links">
+        <main className="area_links ">
           {/* CATEGORIAS */}
           <main className="categories">
             <ul>
               <RxHamburgerMenu /> CATEGORIAS
-            <div className="list_categorys">
-            <li><a href="">Smartphones <SlScreenSmartphone/></a></li>
-              <li><a href="">Monitores<LuMonitorDot/></a></li>
-              <li><a href="">Desepenho< SiOpensourcehardware /></a></li>
-              <li><a href="">Video Games <SiRepublicofgamers/></a></li>
-              <li><a href="">Outros...<MdOutlineDevicesOther/></a></li>
-              <li><a href="">Outros...<MdOutlineDevicesOther/></a></li>
-              <li><a href="">Outros...<MdOutlineDevicesOther/></a></li>
-              <li><a href="">Outros...<MdOutlineDevicesOther/></a></li>
-              <li><a href="">Outros...<MdOutlineDevicesOther/></a></li>
-            </div>
+              <div className="list_categorys">
+                <li>
+                  <a href="">
+                    Smartphones <SlScreenSmartphone />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Monitores
+                    <LuMonitorDot />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Desepenho
+                    <SiOpensourcehardware />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Video Games <SiRepublicofgamers />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros...
+                    <MdOutlineDevicesOther />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros...
+                    <MdOutlineDevicesOther />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros...
+                    <MdOutlineDevicesOther />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros...
+                    <MdOutlineDevicesOther />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros...
+                    <MdOutlineDevicesOther />
+                  </a>
+                </li>
+              </div>
             </ul>
           </main>
           {/* UL LINKS - OPÇÕES */}
           <ul className="ul_links">
-          <li><a href="">< MdNewReleases/>LANÇAMENTOS</a></li>
-        <li><a href=""><FaLaptopCode />PC GAMER</a></li>
-        <li><a href=""><MdWorkspacesFilled/>ACESSÓRIOS</a></li>
-        <li><a href=""><BiSolidOffer/>OFERTAS</a></li>
-        <li><a href=""><FaShirt/>MODA</a></li>
-        <li><a href="">< BiSolidCoupon />CUPONS</a></li>
-        <li><a href="">< MdSell  />VENDER</a></li>
-        <li><a href="">< MdContactMail />CONTATO</a></li>
-            
+            <li>
+              <a href="">
+                <MdNewReleases />
+                LANÇAMENTOS
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <FaLaptopCode />
+                PC GAMER
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <MdWorkspacesFilled />
+                ACESSÓRIOS
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <BiSolidOffer />
+                OFERTAS
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <FaShirt />
+                MODA
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <BiSolidCoupon />
+                CUPONS
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <MdSell />
+                VENDER
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <MdContactMail />
+                CONTATO
+              </a>
+            </li>
           </ul>
         </main>
-       
       </header>
     </>
   );

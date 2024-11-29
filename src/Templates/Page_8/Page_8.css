@@ -10,6 +10,10 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 10vh;
+    .title_{
+        width: 100%;
+        overflow: hidden;
+    }
 
     h1{
         width: 100%;
@@ -73,6 +77,14 @@
 }
 
 
+.card:nth-child(3){
+    width: 50%;
+}
+
+
+
+
+
 /* ==================MIDA SCREEN ================= */
 @media(max-width:480px){
     
@@ -87,19 +99,21 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 10vh;
-    h1{
-        width: 100%;
-        overflow: hidden;
-        font-size: 2vw;
-        font-family: "Proelium";
-        font-size: 12vw;
-        height: 30vh;
-        margin-top: 8vh;
-        text-align: center;
+    .title_{
+        width: 90%;
+        height: 15%;
+       margin-top: 5vh;
         overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content: flex-start;
+    }
+    h1{
+        width: 100%;
+        overflow: hidden;
+        font-family: "Proelium";
+        font-size: 7vw;
+        text-align: center;
         
     }
 }

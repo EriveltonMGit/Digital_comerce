@@ -1,0 +1,36 @@
+
+
+
+
+#favoritosProdutos{
+ 
+    position: fixed;
+    right: 0;
+    height: 80vh;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 108vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+    overflow-y: auto;
+    gap: 1vh;
+    flex-direction: column;
+   
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+   transform: translateX(110%);
+   transition: 1s all;
+   box-shadow: 1px 1px 1rem black;
+   color: black;
+ 
+}
+/* Carrinho visível */
+#favoritosProdutos.show_cart {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0%);
+}

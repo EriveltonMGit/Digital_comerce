@@ -38,67 +38,69 @@ export default function App() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-
-
-
- 
+  // Estado para controlar a visibilidade das mensagens
+  const [messageCartVisible, setMessageCartVisible] = useState(false);
+  const [messageRemoveCartVisible, setMessageRemoveCartVisible] = useState(false);
 
   // Função para adicionar item ao carrinho
-  const mensagemCartProdutos = document.getElementById(`mensagemCartProdutos`)
   const addToCart = (item: CartItem) => {
     setCartItems((prevItems) => [
       ...prevItems,
       item, // Mantém o preço como número
     ]);
 
+    // Exibir mensagem de sucesso ao adicionar o item
+    setMessageCartVisible(true);
 
-    if( mensagemCartProdutos){
-    mensagemCartProdutos.style.display = 'flex'
-
-    setTimeout(()=>{
-  mensagemCartProdutos.style.display = 'none'
-    }, 4000)
-    }
-
-
+    // Ocultar a mensagem após 4 segundos
+    setTimeout(() => {
+      setMessageCartVisible(false);
+    }, 4000);
   };
 
-// Função para remover item do carrinho
-  const mensagemRemoveCartProdutos= document.getElementById(`mensagemRemoveCartProdutos`)
- 
+  // Função para remover item do carrinho
   const removeCartItems = (index: number) => {
     setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
-    
 
-    if( mensagemRemoveCartProdutos){
-      mensagemRemoveCartProdutos.style.display = 'flex'
-      
-      setTimeout(()=>{
-        mensagemRemoveCartProdutos.style.display = 'none'
-      }, 4000)
-      }
-  
+    // Exibir mensagem de sucesso ao remover o item
+    setMessageRemoveCartVisible(true);
 
-
+    // Ocultar a mensagem após 4 segundos
+    setTimeout(() => {
+      setMessageRemoveCartVisible(false);
+    }, 4000);
   };
 
   return (
     <section>
       <Nav />
-      <Menagem/>
-      < MensagemProducts/>
+      <Menagem />
+      <MensagemProducts />
+      
+      {/* Mensagens de sucesso */}
+      {messageCartVisible && (
+        <div id="mensagemCartProdutos" style={{ display: "flex" }}>
+          Produto adicionado ao carrinho!
+        </div>
+      )}
+      {messageRemoveCartVisible && (
+        <div id="mensagemRemoveCartProdutos" style={{ display: "flex" }}>
+          Produto removido do carrinho!
+        </div>
+      )}
+      
       <Cart cartItems={cartItems} removeFromCart={removeCartItems} />
       <Page_1 />
       <MiniCards addToCart={addToCart} />
       <Page_2 />
       <ProductCarousel addToCart={addToCart} />
-      <Page_3 addToCart={addToCart}/>
-      <Page_4/>
-      <Page_5 addToCart={addToCart}/>
+      <Page_3 addToCart={addToCart} />
+      <Page_4 />
+      <Page_5 addToCart={addToCart} />
       <Page_6 addToCart={addToCart} />
-      <Page_7 addToCart={addToCart}/>
-      <Page_8/>
-      <Page_9 addToCart={addToCart}/>
+      <Page_7 addToCart={addToCart} />
+      <Page_8 />
+      <Page_9 addToCart={addToCart} />
     </section>
   );
 }
