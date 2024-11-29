@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { useParams } from "react-router-dom";
 import products, { CartItem } from "../products"; // Ajuste o caminho conforme necessário
 import "./ProductsDetails.css";
@@ -12,7 +12,8 @@ interface ProductCarouselProps {
   addToCart: (item: CartItem) => void; // Função para adicionar ao carrinho
 }
 
-function ProductDetails({ addToCart }: ProductCarouselProps) {
+// eslint-disable-next-line no-empty-pattern
+function ProductDetails({ }: ProductCarouselProps) {
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
