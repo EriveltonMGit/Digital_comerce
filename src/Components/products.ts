@@ -708,7 +708,7 @@ const products: CartItem[] = [
     id: "38",
     name: "Patins Roller Inline Infantil Roxo 34 A 37 Menina + Proteção",
     image:
-      "/public/img/Page_6/products/D_NQ_NP_963989-MLB80962700623_112024-O.webp",
+      "/img/Page_6/products/D_NQ_NP_963989-MLB80962700623_112024-O.webp",
     miniImages: [
       "https://http2.mlstatic.com/D_NQ_NP_689556-MLB78576183359_102024-O.webp",
       "https://http2.mlstatic.com/D_NQ_NP_607785-MLB78576183361_102024-O.webp",
@@ -726,7 +726,7 @@ const products: CartItem[] = [
     id: "39",
     name: "Patins Inline Freestyle Traxart Volt + 2.0 Preto - Abec-9",
     image:
-      "/public/img/Page_6/products/D_NQ_NP_715271-MLB76323203552_052024-O.webp",
+      "/img/Page_6/products/D_NQ_NP_715271-MLB76323203552_052024-O.webp",
     miniImages: [
       "https://http2.mlstatic.com/D_NQ_NP_689556-MLB78576183359_102024-O.webp",
       "https://http2.mlstatic.com/D_NQ_NP_607785-MLB78576183361_102024-O.webp",
