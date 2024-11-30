@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Cart.css";
 import { IoBagRemove } from "react-icons/io5";
 
@@ -53,6 +54,9 @@ function Cart({ cartItems, removeFromCart }: CartProps) {
       <div className="totalPrice">
         <h3>Total: {formatPrice(calculateTotal())}</h3>
       </div>
+      <Link to="/produtos_selecionados" className="cart_pedidos_finalizar">
+         Ir para o carrinho
+      </Link>
     </section>
   );
 }

@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductDetails from '../../Components/ProductDetails/ProductDetails';
+import Lancamentos from '../../Pages_links/Lancamentos/Lancamentos'
+import PcGamer from '../../Pages_links/PcGamer/PcGamer'
 import App from '../../App';
 import { useState, useEffect } from "react";
+import Produtos_Selecionados from '../Produtos_Selecionados/Produtos_Selecionados';
 interface CartItem {
   id: string;
   name: string;
@@ -52,6 +55,9 @@ const RoutesComponent = () => {
         <Route path="/" element={<App />} />
         {/* Passando a função addToCart para ProductDetails */}
         <Route path="/product/:id/:name" element={<ProductDetails addToCart={addToCart} />} />
+        <Route path="/lancamentos" element={<Lancamentos />} />
+        <Route path="/pcgamer" element={< PcGamer/>} />
+        <Route path="/produtos_Selecionados" element={<  Produtos_Selecionados/>} />
       </Routes>
     </Router>
   );

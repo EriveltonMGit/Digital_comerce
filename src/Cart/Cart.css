@@ -92,6 +92,38 @@ position: relative;
 
 
 
+/* cart_pedidos_finalizar */
+.cart_pedidos_finalizar{
+  bottom: 0;
+  
+  width: 100%;
+  max-width: 280px;
+  height: 10vh;
+  margin-top: 1vh;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  z-index: 20;
+  background-color: var(--white);
+  background-color: var(  --bk-color-yellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==============MEDIA SCREM================== */
 @media (max-width:480px) {
   
@@ -190,7 +222,7 @@ button{
 .totalPrice{
   
   bottom: 0;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   width: 100%;
   max-width: 280px;
   height: 10vh;
@@ -204,4 +236,30 @@ button{
   z-index: 20;
   background-color: var(--white);
 }
+
+/* cart_pedidos_finalizar */
+.cart_pedidos_finalizar{
+  bottom: 0;
+  
+  width: 100%;
+  max-width: 280px;
+  height: 10vh;
+  margin-bottom: 10vh;
+  margin-top: 1vh;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  z-index: 20;
+  background-color: var(--white);
+  background-color: var(  --bk-color-yellow);
+}
+
+
+
+
+
 }

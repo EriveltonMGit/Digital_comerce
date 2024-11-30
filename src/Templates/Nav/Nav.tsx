@@ -184,16 +184,16 @@ function Nav() {
           {/* UL LINKS - OPÇÕES */}
           <ul className="ul_links">
             <li>
-              <a href="">
+              <Link to="/lancamentos">
                 <MdNewReleases />
                 LANÇAMENTOS
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/pcgamer">
                 <FaLaptopCode />
                 PC GAMER
-              </a>
+              </Link>
             </li>
             <li>
               <a href="">
