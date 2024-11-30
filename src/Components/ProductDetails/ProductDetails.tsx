@@ -119,7 +119,15 @@ function ProductDetails({ }: ProductCarouselProps) {
       <div className="card_descricao">
         <div className="area-price">
           <h1>{product.name}</h1>
-          <p className="estado">Estado: {product.estado}</p>
+          <p className="estado">Estado: {product.estado}  
+          <div><img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          </div>
+        
+          </p>
           <b>Desconto: {product.discount || "Sem desconto"}</b>
           <p className="avista">À vista</p>
           <p className="price">Por: R$ {formatPrice(product.price)}</p>
