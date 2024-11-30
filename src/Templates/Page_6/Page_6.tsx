@@ -20,112 +20,112 @@ interface ProductCarouselProps {
 const products: CartItem[] = [
   {
     id: "40",
-    name: "Samsung Galaxy S23 FE 5G Dual SIM 128 GB Verde 8 GB RAM",
-    image: "/img/page_3/products/D_NQ_NP_764549-MLA79439802094_102024-O.webp",
+    name: "Camisa Jogo 3 Bahia 2024 Azul Masculina",
+    image: "/img/Page_6/products/D_NQ_NP_694364-MLB79422609301_092024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 2539,
-    discount: "De R$ 2.821 ",
-    category: "Smartphones",
+    price: 198,
+    discount: "De R$ 230 ",
+    category: "Esporte",
   },
   {
     id: "41",
-    name: "Xiaomi Redimi 13c 256gb 8gb Ram Global + Nota Fiscal + Fone",
-    image: "/img/page_3/products/D_NQ_NP_945155-MLB80003110267_102024-O.webp",
+    name: "Capacete Moto Tipo Sanmarino Automático Masculino Feminino",
+    image: "/img/Page_6/products/D_NQ_NP_860255-MLB72462091952_102023-O.webp",
     delivery: "/img/icons/full.png",
-    price: 1256,
-    discount: "De R$ 1320",
-    category: "SmartPhones",
+    price: 87,
+    discount: "De R$ 120",
+    category: "Esporte",
   },
   {
     id: "42",
-    name: "Xiaomi Redmi Note 13 256gb 8gb Ram Camera Top 108mpx +brind",
-    image: "/img/page_3/products/D_NQ_NP_678175-MLB79435931762_102024-O.webp",
+    name: "Camisa Corinthians Retrô Campeão Brasileiro 1990 Oficial",
+    image: "/img/Page_6/products/D_NQ_NP_956514-MLB80271835488_112024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 1315,
-    discount: "De R$ 1430",
-    category: "SmartPhones",
+    price:219,
+    discount: "De R$ 250",
+    category: "Esporte",
   },
   {
     id: "43",
-    name: "Tablet Positivo Vision Tab 10 4gb 128gb 10,1 Hd Ips Preto",
-    image: "/img/page_3/products/D_NQ_NP_839193-MLB74210683498_012024-O.webp",
+    name: "Camisa Retrô Flamengo 1981 Zico Libertadores Oficial",
+    image: "/img/Page_6/products/D_NQ_NP_967533-MLB46819833304_072021-O.webp",
     delivery: "/img/icons/full.png",
-    price:912,
-    discount: "De R$ 1100",
-    category: "SmartPhones",
+    price: 173,
+    discount: "De R$ 214",
+    category: "Esporte",
   },
   {
     id: "44",
-    name: "Guitarra Telecaster Seven Stc-307 Lh Canhoto C/ Bag Cor Âmbar",
-    image: "/img/page_3/products/D_NQ_NP_676861-MLA80956236533_112024-O.webp",
+    name: "Camisa Atlético Mineiro Retrô Libertadores 2013 Oficial",
+    image: "/img/Page_6/products/D_NQ_NP_757010-MLB75750457355_042024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 870,
-    discount: "998",
-    category: "Instrumentos",
+    price: 188,
+    discount: "298",
+    category: "Esporte",
   },
   {
     id: "45",
-    name: "Guitarra elétrica Jackson JS Series JS22 DKA dinky de choupo snow white brilhante com diapasão de amaranto",
-    image: "/img/page_3/products/D_NQ_NP_863465-MLA74779497997_022024-O.webp",
+    name: "Capacete Fechado Pro Tork Sport Moto 788 Automatico Vis Fume Cor Laranja Tamanho do capacete 60",
+    image: "img/Page_6/products/D_NQ_NP_853263-MLU76897657990_062024-O.webp",
     delivery: "/img/icons/full.png",
-    price:2206,
-    discount: "De 2.700",
-    category: "Instrumentos",
+    price:99,
+    discount: "De 260",
+    category: "Esporte",
   },
   {
     id: "46",
-    name: "Serra Mármore 4.3/8 4100nh3z 1.300w Makita 220v",
-    image: "/img/page_3/products/D_NQ_NP_871242-MLU76219023004_052024-O.webp",
+    name: "Monitor LG 24ms Ips, Fullhd, 100hz, Ajuste De Inclinação",
+    image: "/img/Page_6/products/D_NQ_NP_824267-MLA79575810594_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 439,
-    discount: "De R$ 510",
-    category: "Ferramentas",
+    price: 699,
+    discount: "De R$ 670",
+    category: "Tecnologia",
   },
   {
     id: "47",
-    name: "Furadeira De Impacto 3/8 10mm Gsb450 Re 127v Bosch Com Jogo De Brocas Bits E Buchas 300 Peças The Black Tools",
-    image: "/img/page_3/products/D_NQ_NP_921231-MLU79228400765_092024-O.webp",
+    name: "Monitor Gamer LG Ultragear 24 180hz 1ms Ips 24gs60f Bivolt Negro",
+    image: "/img/Page_6/products/D_NQ_NP_840804-MLU78161762657_082024-O.webp",
     delivery: "/img/icons/full.png",
-    price:378,
-    discount: "De R$ 412",
-    category: "Ferramentas",
+    price:951,
+    discount: "De R$ 1024",
+    category: "Tecnologia",
   },
   {
     id: "48",
-    name: "Furadeira E Parafusadeira De Impacto 1/2 Gsb 183 Li 18v Com Carregador Bivolt Bateria E Maleta Bosch",
-    image: "/img/page_3/products/D_NQ_NP_915856-MLA80174257891_102024-O.webp",
+    name: "Monitor Gamer Portátil 15.6 1080p Fhd Ips Tela Pare Hdmi/usb",
+    image: "/img/Page_6/products/D_NQ_NP_759124-MLB79512086328_102024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 667,
-    discount: "De R$ 713",
-    category: "Ferramentas",
+    price: 767,
+    discount: "De R$ 913",
+    category: "Tecnologia",
   },
   {
     id: "49",
-    name: "Perfume Feminino La Vie Est Belle Lancôme EDP 100ml",
-    image: "/img/page_3/products/D_NQ_NP_934059-MLA80281737621_102024-O.webp",
+    name: "Monitor Portátil Arzopa Z1FC 16,1'' 144hz Ultrafino 1080p Fhd Ips Hdmi Usb-c Tela Extendida",
+    image: "/img/Page_6/products/D_NQ_NP_824138-MLU75842134825_042024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 534,
+    price: 670,
     discount: "De R$ 730",
-    category: "Perfumes",
+    category: "Tecnologia",
   },
   {
     id: "50",
-    name: "Carolina Herrera Good Girl Tradicional EDP 150ml para feminino",
-    image: "/img/page_3/products/D_NQ_NP_950204-MLA49695604575_042022-O.webp",
+    name: "Fone De Ouvido Bluetooth Lenovo Gm2 Pro Led Gamer Livepods Cor Preto",
+    image: "/img/Page_6/products/D_NQ_NP_690479-MLU77371088705_072024-O.webp",
     delivery: "/img/icons/full.png",
-    price: 650,
-    discount: "De R$ 740",
-    category: "Perfumes",
+    price: 78,
+    discount: "De R$ 89",
+    category: "Tecnologia",
   },
 ];
 
 
-
+import { useNavigate } from "react-router-dom";
 
 function Page_6({ addToCart }: ProductCarouselProps) {
 
 
-  
+  const navigate = useNavigate();
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -199,6 +199,12 @@ function Page_6({ addToCart }: ProductCarouselProps) {
                     alt={product.name}
                     className="carousel-card-img"
                   />
+                    <button
+              className="btn_exibir"
+              onClick={() => navigate(`/product/${product.id}/${encodeURIComponent(product.name)}`)}
+            >
+              Visualizar
+            </button>
                   <div className="carousel-card-body">
                     <h5 className="carousel-card-title">{product.name}</h5>
 

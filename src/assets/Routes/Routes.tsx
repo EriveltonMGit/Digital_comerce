@@ -24,7 +24,7 @@ const RoutesComponent = () => {
 
 
 
-  // Função para adicionar produto ao carrinho, que vem de App
+  // Função para adicionar produto ao carrinho, que vem de App 
   const productsDetailsAdd = document.getElementById(`productsDetailsAdd`)
   const addToCart = (item: CartItem) => {
     setCartItems((prevItems) => [

@@ -153,7 +153,7 @@ b{
 /* price_products */
 .desc_products{
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-color: var( --bk-color);
     position: absolute;
     bottom: 0;
@@ -164,7 +164,7 @@ b{
 
   p{
     color: var(--white);
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-family: 'Sora-VariableFont_wght';
   }
   .btn_cart{
@@ -220,8 +220,26 @@ b{
 
   /*  */
 
-
-
+  .btn_finalizar{
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 2vw;
+  width: 30%;
+ 
+  margin-bottom: 2vh;
+  background-color: var(--bk-color-yellow);
+  padding: 0.5rem;
+  font-size: 1.2vw;
+  font-family: 'Sora-VariableFont_wght';
+  border-radius: 5px;
+  transition: 0.6s all;
+  }
+  .btn_finalizar:hover{
+    background-color: var(--bk-color); 
+     border: 1px solid  var( --bk-color-yellow);
+     color: var(--bk-color-yellow);
+   }
 
   /* ==================MEDIA SCREEN ====================== */
   @media (max-width:480px){
@@ -230,7 +248,7 @@ b{
 .produtos_details{
 
   width: 100%;
-  height: 140vh;
+  height: 160vh;
   display: flex;
   align-items:flex-end;
   justify-content: center;
@@ -315,7 +333,7 @@ b{
 /* card_price */
 .card_descricao{
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   border-left: 1px solid var(--bk-color);
   overflow: hidden;
   position: relative;
@@ -334,7 +352,7 @@ b{
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 100%;
   padding: 1rem;
 
 
@@ -399,7 +417,7 @@ display: flex;
 /* price_products */
 .desc_products{
   width: 100%;
-  height: 50%;
+  height: 60%;
   background-color: var( --bk-color);
   position: absolute;
   bottom: 0;
@@ -407,6 +425,7 @@ display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 1rem;
+ 
  
 p{
   color: var(--white);
@@ -463,5 +482,31 @@ transition: 0.6s all;
   }
 }
 
+/* btn_finalizar */
+.btn_finalizar{
+position: absolute;
+bottom: 0;
+right: 0;
+color: white;
+background-color: var(--bk-color-yellow);
+margin-bottom: 4vh;
+color: var( --bk-color);
+margin-right: 4vw;
+padding: 0.5rem;
+font-size: 4vw;
+width: 30%;
+font-family: 'Sora-VariableFont_wght';
+border-radius: 5px;
+transition: 0.6s all;
+}
+.btn_finalizar:hover{
+  background-color: var(--bk-color); 
+  color: var(--bk-color-yellow);
+  border: 1px solid var(--bk-color-yellow);
+ }
+
 /*  */
   }
+
+
+  

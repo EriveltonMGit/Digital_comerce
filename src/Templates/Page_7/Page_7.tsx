@@ -120,9 +120,12 @@ const products: CartItem[] = [
 ];
 
 
-
+import { useNavigate } from "react-router-dom";
 
 function Page_7({ addToCart }: ProductCarouselProps) {
+
+  const navigate = useNavigate();
+
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -196,6 +199,12 @@ function Page_7({ addToCart }: ProductCarouselProps) {
                     alt={product.name}
                     className="carousel-card-img"
                   />
+                   <button
+              className="btn_exibir"
+              onClick={() => navigate(`/product/${product.id}/${encodeURIComponent(product.name)}`)}
+            >
+              Visualizar
+            </button>
                   <div className="carousel-card-body">
                     <h5 className="carousel-card-title">{product.name}</h5>
 

@@ -14,6 +14,15 @@ interface ProductCarouselProps {
 
 // eslint-disable-next-line no-empty-pattern
 function ProductDetails({ }: ProductCarouselProps) {
+
+  useEffect(() => {
+    // Garante que a página comece do topo ao carregar
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []); // Esse efeito será chamado apenas na montagem do componente
+
+
+
+
   // Verifica se o preço tem casas decimais e aplica .toFixed(3) se necessário
   function formatPrice(price: number): string {
     return price.toLocaleString("pt-BR", {
@@ -129,6 +138,7 @@ function ProductDetails({ }: ProductCarouselProps) {
           >
             Adicionar ao Carrinho
           </button>
+          <button className="btn_finalizar">Finalizar</button>
         </div>
       </div>
     </section>

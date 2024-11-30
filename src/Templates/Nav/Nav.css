@@ -346,7 +346,7 @@
   background-color: var(--bk-color);
   position: relative;
   padding: 0;
- 
+  overflow: hidden;
 }
 
 /* logo */
@@ -358,14 +358,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+ 
  margin-left: -4vw;
-
+overflow: hidden;
 
   img {
-    width: 25vw;
+    width: 100%;
+  
     margin-bottom: 0;
-    margin-bottom: -2vh;
+    
+    overflow: hidden;
   }
 }
 
@@ -500,7 +502,6 @@
     background-color: var(--bk-color-yellow);
     margin-top: 60vh;
     z-index: 800;
-    border: 1px solid red;
     cursor: pointer;
     gap: 0.5vh;
     padding: 0.5rem;
