@@ -120,11 +120,12 @@ function ProductDetails({ }: ProductCarouselProps) {
         <div className="area-price">
           <h1>{product.name}</h1>
           <p className="estado">Estado: {product.estado}  
-          <div><img src="/public/img/icons/estrela_cheia.gif" alt="" />
-          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
-          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
-          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
-          <img src="/public/img/icons/estrela_cheia.gif" alt="" />
+          <div>
+          <img src="/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/img/icons/estrela_cheia.gif" alt="" />
+          <img src="/img/icons/estrela_cheia.gif" alt="" />
           </div>
         
           </p>
