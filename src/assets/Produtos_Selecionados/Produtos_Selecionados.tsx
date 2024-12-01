@@ -81,7 +81,7 @@ function Produtos_Selecionados() {
           {cartItems.length > 0 ? (
             <div className="produtos_lista">
               {cartItems.map((item, index) => (
-                <div key={item.id} className="produto_item">
+                <div  key={`${item.id}-${index}`} className="produto_item">
                   <img src={item.image} alt={item.name} />
                   <div className="produto_detalhes">
                     <p className="name_">{item.name}</p>

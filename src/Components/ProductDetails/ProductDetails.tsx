@@ -94,7 +94,7 @@ function ProductDetails({ }: ProductCarouselProps) {
 <div className="mini_images">
   {product.miniImages && product.miniImages.length > 0 ? (
     product.miniImages.map((miniImage, index) => (
-      <div key={index} className="card_img_products_mini">
+      <div key={`${product.id}-${index}`} className="card_img_products_mini">
         <img 
           src={miniImage} 
           alt={`${product.name} - Mini ${index + 1}`} 
@@ -119,7 +119,7 @@ function ProductDetails({ }: ProductCarouselProps) {
       <div className="card_descricao">
         <div className="area-price">
           <h1>{product.name}</h1>
-          <p className="estado">Estado: {product.estado}  
+          <span className="estado">Estado: {product.estado}  
           <div>
           <img src="/img/icons/estrela_cheia.gif" alt="" />
           <img src="/img/icons/estrela_cheia.gif" alt="" />
@@ -128,7 +128,7 @@ function ProductDetails({ }: ProductCarouselProps) {
           <img src="/img/icons/estrela_cheia.gif" alt="" />
           </div>
         
-          </p>
+          </span>
           <b>Desconto: {product.discount || "Sem desconto"}</b>
           <p className="avista">À vista</p>
           <p className="price">Por: R$ {formatPrice(product.price)}</p>
