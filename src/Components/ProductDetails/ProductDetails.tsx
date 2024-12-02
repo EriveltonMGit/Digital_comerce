@@ -79,6 +79,14 @@ function ProductDetails({ }: ProductCarouselProps) {
     }
   };
 
+
+
+
+
+
+
+
+
   return (
     <section className="produtos_details">
       {/* Mensagem de sucesso, visível ao adicionar ao carrinho */}

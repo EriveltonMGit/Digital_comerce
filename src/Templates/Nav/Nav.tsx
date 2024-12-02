@@ -1,3 +1,4 @@
+import React, { useState, useRef, useEffect } from "react";
 // IMPORT IMGS
 
 // ICONS REACT
@@ -30,211 +31,227 @@ import "./Nav.css";
 import MenuDevice from "../../Components/MenuDevice/MenuDevice";
 import Favoritos from "../../Components/Favoritos/Favoritos";
 import { Link } from "react-router-dom";
-function Nav() {
-  const abrirCart = () => {
-    // Obtém o elemento do carrinho pelo ID
-    const cartElement = document.getElementById("cart_model");
+import products from "../../Components/products";
 
+function Nav() {
+  const [searchTerm, setSearchTerm] = useState<string>(""); // Termo de busca
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [filteredProducts, setFilteredProducts] = useState<any[]>([]); // Resultados filtrados
+  const searchBarRef = useRef<HTMLDivElement>(null); // Ref para monitorar o clique fora da div de filtros
+
+  const abrirCart = () => {
+    const cartElement = document.getElementById("cart_model");
     if (cartElement) {
-      // Alterna a classe de visibilidade
       cartElement.classList.toggle("show_cart");
     }
   };
 
-  //  FUNÇAO PARA ABRIR O MENU DEVICE
   const abrirMenuDevcie = () => {
-    // Obtém o elemento do carrinho pelo ID
-    const cartElement = document.getElementById("menu_device");
-
-    if (cartElement) {
-      // Alterna a classe de visibilidade
-      cartElement.classList.toggle("show_cart");
+    const menuElement = document.getElementById("menu_device");
+    if (menuElement) {
+      menuElement.classList.toggle("show_cart");
     }
   };
 
   const abrirFavoritos = () => {
-    // Obtém o elemento do carrinho pelo ID
-    const cartElement = document.getElementById(`favoritosProdutos`);
-
-    if (cartElement) {
-      // Alterna a classe de visibilidade
-      cartElement.classList.toggle("show_cart");
+    const favoritosElement = document.getElementById("favoritosProdutos");
+    if (favoritosElement) {
+      favoritosElement.classList.toggle("show_cart");
     }
   };
 
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+
+    if (term) {
+      const filtered = products.filter((product) =>
+        product.name.toLowerCase().includes(term.toLowerCase())
+      );
+      setFilteredProducts(filtered);
+    } else {
+      setFilteredProducts([]);
+    }
+  };
+
+  // Função para fechar a div de filtros ao clicar fora dela
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        searchBarRef.current &&
+        !searchBarRef.current.contains(event.target as Node)
+      ) {
+        setSearchTerm(""); // Limpa o termo de busca
+        setFilteredProducts([]); // Limpa os resultados
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <>
-      <header className="nav_bar">
-        {/* conteudo div top */}
-        <main className="area_content">
-          <div className="logo">
-            <Link to="/">
-              <img src="/img/icons/logo.webp" alt="Logo" />
-            </Link>
-          </div>
-          {/* search__bar */}
-          <form className="search__bar">
+    <header className="nav_bar">
+      {/* Conteúdo superior */}
+      <main className="area_content">
+        <div className="logo">
+          <Link to="/">
+            <img src="/img/icons/logo.webp" alt="Logo" />
+          </Link>
+        </div>
+
+        {/* Barra de pesquisa */}
+        <div ref={searchBarRef} className="search-container">
+          <form className="search__bar" onSubmit={(e) => e.preventDefault()}>
             <input
-              type="search__input"
+              type="search"
               placeholder="Buscar Produtos..."
               className="search__input"
+              value={searchTerm}
+              onChange={handleSearch}
               required
             />
-
             <button type="submit" className="search__button">
               <HiMagnifyingGlass />
             </button>
           </form>
-          {/* aqui fica o button hamburguer */}
-          <div className="area-btn_device">
-            <button className="carrinho_produtos_device" onClick={abrirCart}>
-              <FiShoppingCart />{" "}
-            </button>
-            {/* BUTTON PARA ABRIR O MENU DEVICE */}
-            <button className="btn_hamburguer" onClick={abrirMenuDevcie}>
-              <GiHamburgerMenu />
-            </button>
-          </div>
-          {/* MENU DEVICE */}
-          <MenuDevice />
-          {/* btn_group */}
-          <div className="btn_group">
-            <button>
-              ATENDIMENTO <BiSupport />
-            </button>
-            <button>
-              RASTREAT PEDIDO <TbTruckDelivery />
-            </button>
-            <button>
-              ENTRAR/CADASTRE-SE
-              <SlLogin />
-            </button>
-            <button className="carrinho_produtos" onClick={abrirCart}>
-              <FiShoppingCart />{" "}
-            </button>
-            {/* BUTTON PARA ABRIR O CARD FAVORITOS */}
-            <button>
-              <FaRegHeart id="favoritos " onClick={abrirFavoritos} />
-            </button>
-            <Favoritos />
-          </div>
-        </main>
-        {/* conteúdo div bottom */}
-        <main className="area_links ">
-          {/* CATEGORIAS */}
-          <main className="categories">
-            <ul>
-              <RxHamburgerMenu /> CATEGORIAS
-              <div className="list_categorys">
-                <li>
-                  <a href="">
-                    Smartphones <SlScreenSmartphone />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Monitores
-                    <LuMonitorDot />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Desepenho
-                    <SiOpensourcehardware />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Video Games <SiRepublicofgamers />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Outros...
-                    <MdOutlineDevicesOther />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Outros...
-                    <MdOutlineDevicesOther />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Outros...
-                    <MdOutlineDevicesOther />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Outros...
-                    <MdOutlineDevicesOther />
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Outros...
-                    <MdOutlineDevicesOther />
-                  </a>
-                </li>
-              </div>
-            </ul>
-          </main>
-          {/* UL LINKS - OPÇÕES */}
-          <ul className="ul_links">
-            <li>
-              <Link to="/lancamentos">
-                <MdNewReleases />
-                LANÇAMENTOS
-              </Link>
-            </li>
-            <li>
-              <Link to="/pcgamer">
-                <FaLaptopCode />
-                PC GAMER
-              </Link>
-            </li>
-            <li>
-              <a href="">
-                <MdWorkspacesFilled />
-                ACESSÓRIOS
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <BiSolidOffer />
-                OFERTAS
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <FaShirt />
-                MODA
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <BiSolidCoupon />
-                CUPONS
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <MdSell />
-                VENDER
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <MdContactMail />
-                CONTATO
-              </a>
-            </li>
+
+          {/* Lista de resultados */}
+          {filteredProducts.length > 0 && (
+            <div className="search-results">
+              <ul>
+                {filteredProducts.map((product) => (
+                  <li key={product.id}>
+                    <Link
+                      to={`/product/${product.id}/${encodeURIComponent(product.name)}`}
+                      onClick={() => setSearchTerm("")} // Limpa a busca ao clicar
+                    >
+                      <img src={product.image} alt={product.name} />
+                      <span>{product.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Botões para dispositivos */}
+        <div className="area-btn_device">
+          <button className="carrinho_produtos_device" onClick={abrirCart}>
+            <FiShoppingCart />
+          </button>
+          <button className="btn_hamburguer" onClick={abrirMenuDevcie}>
+            <GiHamburgerMenu />
+          </button>
+        </div>
+
+        <MenuDevice />
+
+        {/* Botões de funcionalidades */}
+        <div className="btn_group">
+          <button>
+            ATENDIMENTO <BiSupport />
+          </button>
+          <button>
+            RASTREAR PEDIDO <TbTruckDelivery />
+          </button>
+          <button>
+            ENTRAR/CADASTRE-SE
+            <SlLogin />
+          </button>
+          <button className="carrinho_produtos" onClick={abrirCart}>
+            <FiShoppingCart />
+          </button>
+          <button>
+            <FaRegHeart id="favoritos" onClick={abrirFavoritos} />
+          </button>
+          <Favoritos />
+        </div>
+      </main>
+
+      {/* Conteúdo inferior */}
+      <main className="area_links">
+        <main className="categories">
+          <ul>
+            <RxHamburgerMenu /> CATEGORIAS
+            <div className="list_categorys">
+              <li>
+                <a href="">
+                  Smartphones <SlScreenSmartphone />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Monitores <LuMonitorDot />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Desempenho <SiOpensourcehardware />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Video Games <SiRepublicofgamers />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Outros... <MdOutlineDevicesOther />
+                </a>
+              </li>
+            </div>
           </ul>
         </main>
-      </header>
-    </>
+
+        <ul className="ul_links">
+          <li>
+            <Link to="/lancamentos">
+              <MdNewReleases /> LANÇAMENTOS
+            </Link>
+          </li>
+          <li>
+            <Link to="/pcgamer">
+              <FaLaptopCode /> PC GAMER
+            </Link>
+          </li>
+          <li>
+            <a href="">
+              <MdWorkspacesFilled /> ACESSÓRIOS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <BiSolidOffer /> OFERTAS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <FaShirt /> MODA
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <BiSolidCoupon /> CUPONS
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <MdSell /> VENDER
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <MdContactMail /> CONTATO
+            </a>
+          </li>
+        </ul>
+      </main>
+    </header>
   );
 }
 

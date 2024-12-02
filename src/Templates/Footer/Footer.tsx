@@ -47,10 +47,10 @@ function Footer() {
         <div className="footer-column">
           <h4>Formas de Pagamento</h4>
           <ul className="payment-methods">
-            <li><img src="/public/img/page_9/visa.svg" alt="Visa" /></li>
-            <li><img src="/public/img/page_9/master.svg" alt="Mastercard" /></li>
-            <li><img src="/public/img/page_9/boleto.svg" alt="Boleto" /></li>
-            <li><img src="/public/img/page_9/pix.svg" alt="Pix" /></li>
+            <li><img src="/img/page_9/visa.svg" alt="Visa" /></li>
+            <li><img src="/img/page_9/master.svg" alt="Mastercard" /></li>
+            <li><img src="/img/page_9/boleto.svg" alt="Boleto" /></li>
+            <li><img src="/img/page_9/pix.svg" alt="Pix" /></li>
           </ul>
         </div>
 

@@ -107,3 +107,58 @@
   display: none;
 }
 }
+
+/* =============MIDIA SCREM ================= */
+@media (min-width: 600px) and (max-width: 1024px){
+
+#mensagemCartProdutos{
+  position: fixed;
+  margin-top: 15vh;
+  width: auto;
+
+  background-color: #45d80b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25vw;
+ 
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  font-size: 3vw;
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+
+@keyframes slideMensagem {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+ 
+}
+
+
+#mensagemRemoveCartProdutos{
+  position: fixed;
+  margin-top: 15vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25vw;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  font-size: 3vw;
+  background-color: red;
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+}
