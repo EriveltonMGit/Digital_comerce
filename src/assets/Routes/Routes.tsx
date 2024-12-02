@@ -5,6 +5,7 @@ import PcGamer from '../../Pages_links/PcGamer/PcGamer'
 import App from '../../App';
 import { useState, useEffect } from "react";
 import Produtos_Selecionados from '../Produtos_Selecionados/Produtos_Selecionados';
+
 interface CartItem {
   id: string;
   name: string;

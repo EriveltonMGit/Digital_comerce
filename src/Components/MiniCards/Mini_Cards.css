@@ -204,3 +204,108 @@
   }
 }
 }
+
+/* =============MIDIA SCREM ================= */
+@media (max-width:320px){
+  /* minicards */
+.minicards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1vh;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0 auto;
+  margin-top: -30vh;  
+ 
+  
+}
+
+/* mini_card */
+.mini_cards {
+  padding: 1rem;
+  width: 90%;
+  height: 100%;
+  z-index: 100;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.13);
+  
+  .img_mini {
+    width: 40%;
+    overflow: hidden;
+  }
+  .img_mini img {
+    width: 30vw;
+    object-fit: cover;
+    background-size: cover;
+  }
+}
+
+/* area_content_bonec */
+.area_content_min {
+  height: 25vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  border-left: 1px solid #ddd;
+
+  h1 {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--bk-color);
+    justify-content: space-around;
+    font-family: "Purista";
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  p {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Proelium";
+    font-size: 6vw;
+    font-weight: 800;
+    color: var(--success);
+  }
+  button {
+    padding: 0.5rem;
+    background-color: var(--bk-color-yellow);
+    border-radius: 10px;
+    color: var(--bk-color);
+    font-family: "Purista";
+    font-size: 3.5vw;
+    transition: 0.5s;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 0;
+    
+    justify-content: space-around;
+  }
+  button:hover {
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.541);
+    background-color: var(--bk-color);
+    color: var(--white);
+  }
+}
+}

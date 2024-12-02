@@ -11,6 +11,7 @@
     justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 10vh;
 }
 
 

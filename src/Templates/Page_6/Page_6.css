@@ -11,10 +11,18 @@
     justify-content: space-between;
     flex-direction: column;
     overflow: hidden;
+    margin-top: 10vh;
 }
 
 
+/* text_scroll */
+.text_scroll{
+  background-color: var(--bk-color);
+  font-size: 4vw;
+  font-family: 'Proelium';
+  color: var(--white);
 
+}
 
 /* title_ */
 .section_6 .title_{
@@ -278,11 +286,20 @@
     max-width: 90%;
     margin: 0 auto;
     height: 75vh;
-    margin-top: 5vh;
+   
     overflow: hidden;
     background-color: #f9f9f9;
     border-radius: 10px;
   }
+
+  /* text_scroll */
+.text_scroll{
+  background-color: var(--bk-color);
+  font-size: 10vw;
+  font-family: 'Proelium';
+  color: var(--white);
+
+}
   /* title_ */
   .section_6 .title_{
   width: 90%;

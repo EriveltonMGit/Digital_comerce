@@ -121,6 +121,7 @@ const products: CartItem[] = [
 
 
 import { useNavigate } from "react-router-dom";
+import {VelocityScroll} from '../../assets/components/scroll-based-velocity'
 
 function Page_6({ addToCart }: ProductCarouselProps) {
 
@@ -181,6 +182,8 @@ function Page_6({ addToCart }: ProductCarouselProps) {
 
     return (  
         <>
+       <VelocityScroll className="text_scroll" text={"COMPRE ONLINE - DESCONTOS EXCLUSIVOS - ENTREGA RÁPIDA - QUALIDADE GARANTIDA - PROMOÇÕES - PRODUTOS PREMIUM - LOJA CONFIÁVEL -"} />
+
          <section className="section_6">
        
         {/*  card ofertas  */}

@@ -1143,6 +1143,23 @@ const products: CartItem[] = [
     descricao:
       "Cortina box para banheiro, feita de PVC com visor transparente, na cor preta lisa. Resistente ao mofo, ideal para ambientes úmidos e fácil de limpar.",
   },
+  {
+    id: "73",
+    name: "Sala De Jantar Madesa Jaíne Mesa Tampo De Madeira 6",
+    image: "/img/page_9/products/D_NQ_NP_628131-MLU72700360567_112023-O.webp",
+    miniImages: [
+      "https://http2.mlstatic.com/D_NQ_NP_628131-MLU72700360567_112023-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_962282-MLU72628336830_112023-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_812545-MLU72628297724_112023-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_628131-MLU72700360567_112023-O.webp",
+    ],
+    delivery: "/img/icons/full.png",
+    price: 670,
+    discount: "De R$ 898",
+    estado: "Novo | + de 100 vendidos",
+    descricao:
+      "Sala de jantar Madesa Jaíne com mesa de tampo de madeira e 6 cadeiras. Perfeita para quem busca conforto e qualidade com um design simples e elegante.",
+  },
 ];
 
 export default products;
