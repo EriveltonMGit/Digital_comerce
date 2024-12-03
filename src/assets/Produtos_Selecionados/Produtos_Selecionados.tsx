@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Nav from "../../Templates/Nav/Nav";
 import "./Produtos_Selecionados.css";
+import Cart from "../../Cart/Cart";
+
+import Confetti from "../components/confetti";
 
 interface CartItem {
   id: string;
@@ -64,18 +67,43 @@ function Produtos_Selecionados() {
     setShowSuccessScreen(true); // Exibir a tela de sucesso
   };
 
+
+  
+
+
+
+
   return (
     <>
-      {showSuccessScreen && (
-        <div className="success_screen">
-          <div className="success_message">
-            <h1>Pedido realizado com sucesso!</h1>
-            <p>Obrigado por sua compra! :)</p>
-            <button onClick={() => setShowSuccessScreen(false)} >Voltar</button>
-          </div>
-        </div>
-      )}
-      <Nav />
+    
+    {showSuccessScreen && (
+  <div className="success_screen">
+    {/* Configuração do Confetti */}
+    <Confetti
+      globalOptions={{ resize: true, useWorker: true }}
+      options={{
+        particleCount: 800, // Mais confetes
+        spread: 150,        // Maior dispersão
+        startVelocity: 60,  // Velocidade inicial maior
+        ticks: 300,         // Prolongar a animação
+        decay: 0.9,         // Desaceleração mais lenta
+      }}
+      className="btn_confetii"
+    />
+    <div className="success_message">
+      <h1>Pedido realizado com sucesso!</h1>
+      <p>Obrigado por sua compra! :)</p>
+      <button onClick={() => setShowSuccessScreen(false)}>Voltar</button>
+    </div>
+  </div>
+)}
+
+     <div >
+     <Nav  />
+     <Cart cartItems={cartItems} removeFromCart={removeItem} />
+    
+  
+     </div>
       <section className="produtos_Selecionados">
         <div className="table_produtos">
           {cartItems.length > 0 ? (
@@ -122,7 +150,9 @@ function Produtos_Selecionados() {
               cartItems.reduce((total, item) => total + item.price * item.quantity, 0)
             )}
           </h3>
-          <button className="finalizar_compra" onClick={finalizarCompra}>
+          <button className="finalizar_compra" onClick={finalizarCompra} >
+            
+   
             Finalizar Compra
           </button>
         </div>

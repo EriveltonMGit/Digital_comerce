@@ -5,8 +5,10 @@ import "./ProductsDetails.css";
 
 // IMPORT NAVBAR
 import Nav from "../../Templates/Nav/Nav";
-import CartDevice from "../../assets/CartDevice/CartDevice";
+
 import { useState, useEffect } from "react";
+import Cart from "../../Cart/Cart";
+
 
 interface ProductCarouselProps {
   addToCart: (item: CartItem) => void; // Função para adicionar ao carrinho
@@ -81,7 +83,10 @@ function ProductDetails({ }: ProductCarouselProps) {
 
 
 
-
+// Função para remover item do carrinho
+const removeItem = (index: number) => {
+  setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
+};
 
 
 
@@ -97,7 +102,8 @@ function ProductDetails({ }: ProductCarouselProps) {
       <Nav />
 
       {/* Passando os itens do carrinho para o componente Cart */}
-      <CartDevice cartItems={cartItems} removeFromCart={() => {}} />
+      <Cart cartItems={cartItems} removeFromCart={removeItem} />
+        
 {/* AQUI FICA AS IMAGENS DOS PRODOs */}
 <div className="mini_images">
   {product.miniImages && product.miniImages.length > 0 ? (
@@ -158,6 +164,10 @@ function ProductDetails({ }: ProductCarouselProps) {
           <button className="btn_finalizar">Finalizar</button>
         </div>
       </div>
+
+
+
+     
     </section>
   );
 }

@@ -103,9 +103,11 @@
     background-color: #d9363e;
   }
 
-
-
-
+/* mensagem_Carinho */
+.mensagem_Carinho{
+  position: absolute;
+  margin-top: 25vh;
+}
 
 
 
@@ -188,11 +190,23 @@
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .success_message button:hover {
   background-color: #45a049;
 }
+/* .btn_confetii */
+.btn_confetii{
+  position: fixed;
+  margin-top: 25vh;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  z-index: -1;
+  background: none;
+}
+
 
 
 
@@ -295,7 +309,7 @@
   /* mensagem_Carinho */
   .mensagem_Carinho{
     position: absolute;
-    margin-bottom: 70vh;
+  
   }
 
 
@@ -446,6 +460,16 @@
 
 .success_message button:hover {
   background-color: #45a049;
+}
+/* .btn_confetii */
+.btn_confetii{
+  position: fixed;
+  margin-top: -90vh;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  z-index: -1;
+  background: none;
 }
 
 

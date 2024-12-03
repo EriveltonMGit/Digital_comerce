@@ -219,6 +219,16 @@ b{
    
     bottom: 70vh;
   }
+
+
+.footer_details{
+  position: absolute;
+  margin-top: 100vh;
+}
+
+
+
+
   
   @keyframes slideMensagem_details {
     0% {

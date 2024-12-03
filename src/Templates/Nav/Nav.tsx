@@ -14,7 +14,12 @@ import { SlScreenSmartphone } from "react-icons/sl";
 import { LuMonitorDot } from "react-icons/lu";
 import { SiOpensourcehardware } from "react-icons/si";
 import { SiRepublicofgamers } from "react-icons/si";
-import { MdOutlineDevicesOther } from "react-icons/md";
+import {
+  MdLaptopMac,
+  MdOutlineDevicesOther,
+  MdOutlineWatch,
+  MdTabletAndroid,
+} from "react-icons/md";
 // -------------------
 import { BiSolidOffer } from "react-icons/bi";
 import { MdNewReleases } from "react-icons/md";
@@ -24,8 +29,11 @@ import { FaShirt } from "react-icons/fa6";
 import { BiSolidCoupon } from "react-icons/bi";
 import { MdSell } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
+import { BsCameraVideo } from "react-icons/bs";
+import { AiOutlineAudio } from "react-icons/ai";
+import { FaPrint } from "react-icons/fa6";
 // ----------------
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiDeliveryDrone, GiHamburgerMenu } from "react-icons/gi";
 // IMPORT CSS
 import "./Nav.css";
 import MenuDevice from "../../Components/MenuDevice/MenuDevice";
@@ -38,28 +46,28 @@ function Nav() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [filteredProducts, setFilteredProducts] = useState<any[]>([]); // Resultados filtrados
   const searchBarRef = useRef<HTMLDivElement>(null); // Ref para monitorar o clique fora da div de filtros
-
+  // FUNÇAO PARA ABRIR O CARRINHO DE PRODUTOS
   const abrirCart = () => {
     const cartElement = document.getElementById("cart_model");
     if (cartElement) {
       cartElement.classList.toggle("show_cart");
     }
   };
-
+  // FUNÇÃO PAR AABRIR O MENU DE OPCAO DEVICE
   const abrirMenuDevcie = () => {
     const menuElement = document.getElementById("menu_device");
     if (menuElement) {
       menuElement.classList.toggle("show_cart");
     }
   };
-
+  // FUNÇÃO PARA ADICOAR AOS FAVORITOS SO MENSAGEM
   const abrirFavoritos = () => {
     const favoritosElement = document.getElementById("favoritosProdutos");
     if (favoritosElement) {
       favoritosElement.classList.toggle("show_cart");
     }
   };
-
+  // FUNÇÃO PARA O FILTER DE PRODUTOS DO INPUT
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value;
     setSearchTerm(term);
@@ -126,7 +134,9 @@ function Nav() {
                 {filteredProducts.map((product) => (
                   <li key={product.id}>
                     <Link
-                      to={`/product/${product.id}/${encodeURIComponent(product.name)}`}
+                      to={`/product/${product.id}/${encodeURIComponent(
+                        product.name
+                      )}`}
                       onClick={() => setSearchTerm("")} // Limpa a busca ao clicar
                     >
                       <img src={product.image} alt={product.name} />
@@ -179,31 +189,68 @@ function Nav() {
           <ul>
             <RxHamburgerMenu /> CATEGORIAS
             <div className="list_categorys">
-              <li>
-                <a href="">
-                  Smartphones <SlScreenSmartphone />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Monitores <LuMonitorDot />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Desempenho <SiOpensourcehardware />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Video Games <SiRepublicofgamers />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Outros... <MdOutlineDevicesOther />
-                </a>
-              </li>
+              
+                <li>
+                  <a href="">
+                    Smartphones <SlScreenSmartphone />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Monitores <LuMonitorDot />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Desempenho <SiOpensourcehardware />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Video Games <SiRepublicofgamers />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Outros... <MdOutlineDevicesOther />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Tablets <MdTabletAndroid />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Relógios Inteligentes <MdOutlineWatch />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Câmeras <BsCameraVideo />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Fones de Ouvido <AiOutlineAudio />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Drones <GiDeliveryDrone />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Notebooks <MdLaptopMac />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Impressoras <FaPrint />
+                  </a>
+                </li>
+           
             </div>
           </ul>
         </main>

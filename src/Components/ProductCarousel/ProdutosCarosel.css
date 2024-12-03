@@ -1043,3 +1043,246 @@ height: 7vh;
   }
   
   }
+
+  
+  /* =============MIDIA SCREM ================= */
+  @media (min-width: 800px) and (max-width: 1280px){
+   /* Container principal do carrossel */
+.product-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 75vh;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  
+}
+
+/* Track do carrossel */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  padding: 1rem;
+}
+
+/* Botões de controle */
+.carousel-control-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 20px;
+height: 10vh;
+  font-weight: bold;
+  z-index: 2;
+ 
+}
+
+.carousel-control-btn.left {
+  left: -5px;
+}
+
+.carousel-control-btn.right {
+  right: -5px;
+}
+
+.carousel-control-btn:hover {
+  background-color: var(--bk-color-yellow);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Card individual */
+.carousel-card {
+  flex: 0 0 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do card */
+.carousel-card-img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.carousel-card:hover .carousel-card-img {
+  scale: 1.3;
+  rotate: 10deg;
+}
+
+/* btn_exibir */
+.btn_exibir{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 90%;
+  background-color: var(--success);
+  width: 80%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+ z-index: 20;
+ overflow: hidden;
+ font-size: 1.5vw;
+ font-family: 'Purista';
+ text-align: center;
+ 
+}
+.btn_exibir:hover{
+  background-color: var(--bk-color);
+  color: var(--success);
+}
+.carousel-card:hover .btn_exibir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+/* Conteúdo do card */
+.carousel-card-body {
+  padding: 10px;
+  text-align: center;
+  height: 45%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: var(--bk-color);
+}
+
+.carousel-card-title {
+  font-size: 1.4vw;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Purista";
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(100px);
+}
+
+.carousel-card-price {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .price_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    height: 8vh;
+    gap: 0.5vh;
+
+  }
+  p {
+    text-decoration: line-through;
+    margin-bottom: 0;
+    color: var(--white);
+    font-family: "Purista";
+    background-color: var(--bk-color);
+    width: 90%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+  }
+
+  span {
+    margin-bottom: 0;
+    color: var(--bk-color-yellow);
+    font-family: "Purista";
+    background-color: var(--bk-color);
+    width: 90%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+  }
+}
+.delivery {
+  width: 50%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  b {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--success);
+  }
+}
+
+/* favoritos */
+.favoritos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1vw;
+  margin-top: 1vh;
+  font-size: 2.3vw;
+  z-index: 20;
+  transition: 0.5s;
+  display: none;
+  object-fit: cover;
+}
+.favoritos:hover {
+  color: red;
+}
+.carousel-card:hover .favoritos {
+  display: block;
+}
+
+/* add-to-cart-btn */
+.add-to-cart-btn {
+  background-color: var(--bk-color-yellow);
+  font-family: "Purista";
+  font-family: 1.4vw;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+    
+    }
