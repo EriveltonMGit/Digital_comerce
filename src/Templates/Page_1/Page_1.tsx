@@ -96,7 +96,9 @@ function Page_1() {
         </main>
     {/* MENU DEVICE LISTA */}
   
-        
+        <div className="opacity_nuvem">
+
+        </div>
       </section>
     </>
   );

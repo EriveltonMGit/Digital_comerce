@@ -7,6 +7,7 @@
   justify-content: center;
   overflow: hidden;
   flex-direction: column;
+ 
 }
 
 /* carosel_products */
@@ -39,7 +40,14 @@ p {
   overflow: hidden;
   margin-bottom: 2vh;
 }
+/* opacity_nuvem */
+.opacity_nuvem{
+  height: 15vh;
+  width: 100%;
+  background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.925), white);
+  position: absolute;
 
+}
 /* =============MIDIA SCREM ================= */
 @media (max-width: 480px) {
   /* SECTION 1 */

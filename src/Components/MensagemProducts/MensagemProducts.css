@@ -58,7 +58,7 @@
 /* mensagemCartProdutos */
 #mensagemCartProdutos{
   position: fixed;
-  margin-top: 10vh;
+  margin-top: 12vh;
   width: auto;
 
   background-color: #45d80b;
@@ -90,7 +90,7 @@
 
 #mensagemRemoveCartProdutos{
   position: fixed;
-  margin-top: 10vh;
+  margin-top: 12vh;
   width: auto;
   display: flex;
   align-items: center;
