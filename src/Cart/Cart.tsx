@@ -13,9 +13,10 @@ interface CartItem {
 interface CartProps {
   cartItems: CartItem[];
   removeFromCart: (index: number) => void;
+  
 }
 
-function Cart({ cartItems, removeFromCart }: CartProps) {
+function Cart({ cartItems, removeFromCart, }: CartProps) {
   // Função para calcular o total dos produtos
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price, 0);

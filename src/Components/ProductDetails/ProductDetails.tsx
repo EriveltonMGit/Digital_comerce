@@ -99,10 +99,12 @@ const removeItem = (index: number) => {
         Produto adicionado ao carrinho! :)
       </span>
 
-      <Nav />
+      <Nav  />
 
       {/* Passando os itens do carrinho para o componente Cart */}
+     
       <Cart cartItems={cartItems} removeFromCart={removeItem} />
+     
         
 {/* AQUI FICA AS IMAGENS DOS PRODOs */}
 <div className="mini_images">

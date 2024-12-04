@@ -277,6 +277,7 @@ button{
   width: 100%;
   max-width: 300px;
   margin-top: 15vh;
+  top: 0;
   background-color: aliceblue;
   display: flex;
   align-items: center;
@@ -301,6 +302,8 @@ display: block;
 opacity: 1;
 transform: translateX(0%);
 }
+
+
 /* cart_item */
 .cart_item{
 border-bottom: 1px solid #ddd;
@@ -345,7 +348,7 @@ button{
   justify-content: center;
   flex-direction: column;
   p{
-    font-size: 3vw;
+    font-size: 2.3vw;
   }
 }
 
@@ -404,7 +407,7 @@ background-color: var(  --bk-color-yellow);
  
 
   right: 0;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   max-width: 300px;
   margin-top: 15vh;

@@ -239,9 +239,10 @@
 
 
 /* =============MIDIA SCREM ================= */
-@media (min-width: 600px) and (max-width: 1024px){
-  /* section_4 */
-  .section_4 {
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+   /* section_4 */
+   .section_4 {
     width: 90%;
     height: auto;
     margin: 0 auto !important;
@@ -256,7 +257,7 @@
   .section_4 .categorias {
     margin-top: 10vh;
     width: 90%;
-    height: 15%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -272,7 +273,7 @@
   /* grup_categorias */
   .grup_categorias {
     width: 100%;
-    height: 20%;
+    height: 30%;
     gap: 1vh;
     display: flex;
     align-items: center;
@@ -286,7 +287,7 @@
 
   .grup_categorias div {
     width: 46%;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,6 +315,7 @@
       width: 100%;
       border-radius: 20px;
       overflow: hidden;
+      font-size: 3vw;
     }
   }
 
@@ -359,7 +361,7 @@
       color: var(--white);
       transition: 0.5s all;
       border: 1px solid var(--gray);
-      font-size: 4vw;
+      font-size: 3vw;
     }
     .btn_marcas:hover {
       background-color: var(--bk-color-yellow);

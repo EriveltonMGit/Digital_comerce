@@ -514,9 +514,9 @@
   }
 
       /* =============MIDIA SCREM ================= */
-@media (min-width: 600px) and (max-width: 1024px){
-   /* Container principal do carrossel */
-   .section_7   .product-carousel-container {
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+  .section_7 .product-carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,35 +525,14 @@
     position: relative;
     max-width: 90%;
     margin: 0 auto;
-    height: 75vh;
+    height: 65vh;
     margin-top: 5vh;
     overflow: hidden;
     background-color: #f9f9f9;
     border-radius: 10px;
-  }
-  /* title_ */
-  .section_7  .title_{
-  width: 90%;
-  height: 15%;
- margin-top: 5vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  h1{
-      overflow: hidden;
-      
-      font-family: "Proelium";
-      font-size: 7vw;
-      text-align: center;
-      .star{
-        display: none;
-      }
+   
   }
   
-}
-
   /* Track do carrossel */
   .section_7  .carousel-track {
     display: flex;
@@ -561,11 +540,12 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     width: 100%;
-    height: 65vh;
+    height: 100%;
     max-width: 1500px;
     padding: 1rem;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+   
   }
   
   /* Botões de controle */
@@ -583,18 +563,20 @@
   height: 7vh;
     font-weight: bold;
     z-index: 2;
+    
    
   }
   
   .section_7  .carousel-control-btn.left {
     left: -10px;
+   
   }
   
   .section_7  .carousel-control-btn.right {
     right: -10px;
   }
   
-  .section_7  .carousel-control-btn:hover {
+  .section_7   .carousel-control-btn:hover {
     background-color: var(--bk-color-yellow);
     color: #fff;
     transition: 0.3s;
@@ -602,7 +584,7 @@
   
   /* Card individual */
   .section_7   .carousel-card {
-    flex: 0 0 400px;
+    flex: 0 0 350px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -622,9 +604,9 @@
   }
   
   /* Imagem do card */
-  .section_7   .carousel-card-img {
+  .section_7    .carousel-card-img {
     width: 55vw;
- 
+   
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem;
@@ -635,13 +617,50 @@
     align-items: center;
     justify-content: center;
   }
-  .section_7   .carousel-card:hover .carousel-card-img {
+  .section_7  .carousel-card:hover .carousel-card-img {
     scale: 1.3;
     rotate: 10deg;
   }
   
+  
+  
+  /* btn_exibir */
+  .section_7   .btn_exibir{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 90%;
+    background-color: var(--success);
+    width: 80%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   z-index: 20;
+   overflow: hidden;
+   font-size: 3vw;
+   font-family: 'Purista';
+   text-align: center;
+   
+  }
+  .section_7  .btn_exibir:hover{
+    background-color: var(--bk-color);
+    color: var(--success);
+  }
+  .section_7  .carousel-card:hover .btn_exibir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
+  
+  
   /* Conteúdo do card */
-  .section_7   .carousel-card-body {
+  .section_7  .carousel-card-body {
     padding: 10px;
     text-align: center;
     height: 50%;
@@ -658,7 +677,7 @@
   }
   
   .section_7   .carousel-card-title {
-    font-size: 4vw;
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 5px;
     font-family: "Purista";
@@ -670,7 +689,6 @@
   
   .section_7   .carousel-card-price {
     font-size: 1rem;
-    color: #007bff;
     font-weight: bold;
     width: 100%;
     display: flex;
@@ -682,7 +700,7 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
-      width: 100%;
+      width: 55%;
       height: 8vh;
       gap: 0.5vh;
   
@@ -694,7 +712,7 @@
       font-family: "Purista";
       background-color: var(--bk-color);
       width: 90%;
-      font-size: 4vw;
+      font-size: 3vw;
       border-radius: 5px;
     }
   
@@ -703,13 +721,13 @@
       color: var(--bk-color-yellow);
       font-family: "Purista";
       background-color: var(--bk-color);
-      width: 100%;
-      font-size: 4vw;
+      width: 90%;
+      font-size: 3vw;
       border-radius: 5px;
       border: 1px solid var(--bk-color-yellow);
     }
   }
-  .section_7   .delivery {
+  .section_7    .delivery {
     width: 50%;
     height: 8vh;
     display: flex;
@@ -724,7 +742,7 @@
       justify-content: space-around;
       flex-direction: column;
       color: var(--success);
-      font-size: 3vw;
+      font-size: 2vw;
     }
   }
   
@@ -735,7 +753,7 @@
     right: 0;
     margin-right: 1vw;
     margin-top: 1vh;
-    font-size: 8vw;
+    font-size: 2vw;
     z-index: 20;
     transition: 0.5s;
     display: none;
@@ -744,12 +762,12 @@
   .section_7   .favoritos:hover {
     color: red;
   }
-  .section_7   .carousel-card:hover .favoritos {
+  .carousel-card:hover .favoritos {
     display: block;
   }
   
   /* add-to-cart-btn */
-  .section_7  .add-to-cart-btn {
+  .section_7    .add-to-cart-btn {
     background-color: var(--bk-color-yellow);
     font-family: "Purista";
     font-family: 1.2vw;
