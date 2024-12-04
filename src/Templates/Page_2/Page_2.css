@@ -252,12 +252,10 @@
   
 }
 
-
-
-/* =============MIDIA SCREM ================= */
-@media (min-width: 600px) and (max-width: 1024px) {
+/*Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
   .section_2 {
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 90%;
     height: 75vh;
     position: relative;
@@ -309,7 +307,7 @@
   
     h1{
       color: white;
-      font-size: 8vw;
+      font-size: 7vw;
       overflow: hidden;
       font-family: 'Proelium';
       overflow: hidden;
@@ -338,14 +336,13 @@
       border-radius: 5px;
       padding: 1rem; 
       overflow: hidden;
-      img{
-        width: 100%;
-      }
     
   }
-  
 }
-/* =============MIDIA SCREM ================= */
+
+
+
+/* =============MIDIA SCREM Desktop================= */
 @media (min-width: 800px) and (max-width: 1280px){
   .section_2 {
     margin-top: 5vh;

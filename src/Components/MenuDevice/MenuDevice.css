@@ -103,12 +103,12 @@
   #menu_device {
     position: fixed;
     right: 0;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     max-width: 300px;
-    margin-top: 100vh;
+    margin-top: 90vh;
     background: none;
-    backdrop-filter: blur(20px);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,15 +117,13 @@
     gap: 1vh;
     flex-direction: column;
     z-index: 9000;
-
-    border: 1px solid #ddd;
     padding: 0.5rem;
     transform: translateX(110%);
     transition: 1s all;
-    box-shadow: 1px 1px 1rem black;
+    
     .top_links {
       width: 100%;
-      height: 20vh;
+      height: 16vh;
       display: flex;
       align-items: flex-start;
       justify-content: space-around;
@@ -142,7 +140,7 @@
       overflow: hidden;
 
      
-      color: var(--white);
+      color: var(--bk-color);
       padding: 0.2rem;
       border-radius: 4px;
     }
@@ -162,7 +160,8 @@
         align-items: center;
         justify-content: flex-start;
         gap: 2vw;
-        background-color: var(--white);
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
       }
       a:hover {
         background-color: var(--gray);
@@ -172,6 +171,7 @@
         margin-right: 7vw;
         font-size: 7vw;
         cursor: pointer;
+        color: black;
       }
     }
 
@@ -188,7 +188,8 @@
         align-items: center;
         justify-content: flex-start;
         gap: 3vw;
-        background-color: var(--white);
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
       }
     }
     .login_links:hover {
@@ -209,7 +210,7 @@
     width: 100%;
     margin-top: 5vh;
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 16vh;
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -225,9 +226,11 @@
     a {
       width: 45%;
       height: 80%;
-      border: 1px solid var(--bk-color);
-      background-color: var(--bk-color);
-      color: var(--white);
+      padding: 0.3rem;
+      border: 1px solid var(--gray);
+      color: var(--bk-color);
+      border-radius: 5px;
+      color: var(--bk-color);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -238,7 +241,7 @@
     }
     a:hover {
       background-color: var(--gray);
-      color: var(--white);
+      color: var(--bk-color);
     }
   }
 
@@ -247,7 +250,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    margin-top: 57vh;
+    margin-top: 53vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -268,9 +271,13 @@
         width: 100%;
         font-family: "Gotham";
         font-size: 4vw;
-        background-color: var(--bk-color);
+        background-color: var(--gray);
         color: var(--white);
         padding: 0.3rem;
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
+        color: var(--bk-color);
+        border-radius: 5px;
       }
     }
 
@@ -289,13 +296,15 @@
         width: 100%;
         font-family: "Gotham";
         font-size: 4vw;
-        background-color: var(--bk-color);
+        background-color: var(--gray);
         color: var(--white);
         padding: 0.3rem;
+        border: 1px solid var(--gray);
+        color: var(--bk-color);
+        border-radius: 5px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        gap: 5vw;
+        gap: 4vw;
       }
       a:hover{
         background-color: var(--gray);
@@ -310,12 +319,12 @@
   #menu_device {
     position: fixed;
     right: 0;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     max-width: 300px;
-    margin-top: 96vh;
+    margin-top: 90vh;
     background: none;
-    backdrop-filter: blur(20px);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -324,21 +333,18 @@
     gap: 1vh;
     flex-direction: column;
     z-index: 9000;
-
-    border: 1px solid #ddd;
     padding: 0.5rem;
     transform: translateX(110%);
     transition: 1s all;
-    box-shadow: 1px 1px 1rem black;
- 
+    
     .top_links {
       width: 100%;
-      height: 15vh;
+      height: 16vh;
       display: flex;
       align-items: flex-start;
       justify-content: space-around;
       flex-direction: column;
-     
+
     }
     h1 {
       width: 100%;
@@ -350,7 +356,7 @@
       overflow: hidden;
 
      
-      color: var(--white);
+      color: var(--bk-color);
       padding: 0.2rem;
       border-radius: 4px;
     }
@@ -370,7 +376,8 @@
         align-items: center;
         justify-content: flex-start;
         gap: 2vw;
-        background-color: var(--white);
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
       }
       a:hover {
         background-color: var(--gray);
@@ -380,6 +387,7 @@
         margin-right: 7vw;
         font-size: 7vw;
         cursor: pointer;
+        color: black;
       }
     }
 
@@ -396,7 +404,8 @@
         align-items: center;
         justify-content: flex-start;
         gap: 3vw;
-        background-color: var(--white);
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
       }
     }
     .login_links:hover {
@@ -417,10 +426,10 @@
     width: 100%;
     margin-top: 5vh;
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 16vh;
     display: flex;
     flex-direction: column;
-    gap: 0.1vh;
+    gap: 1vh;
   }
 
   /* cards_a */
@@ -433,9 +442,11 @@
     a {
       width: 45%;
       height: 80%;
-      border: 1px solid var(--bk-color);
-      background-color: var(--bk-color);
-      color: var(--white);
+      padding: 0.3rem;
+      border: 1px solid var(--gray);
+      color: var(--bk-color);
+      border-radius: 5px;
+      color: var(--bk-color);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -446,7 +457,7 @@
     }
     a:hover {
       background-color: var(--gray);
-      color: var(--white);
+      color: var(--bk-color);
     }
   }
 
@@ -455,7 +466,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    margin-top: 51vh;
+    margin-top: 53vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -476,9 +487,13 @@
         width: 100%;
         font-family: "Gotham";
         font-size: 4vw;
-        background-color: var(--bk-color);
+        background-color: var(--gray);
         color: var(--white);
         padding: 0.3rem;
+        padding: 0.5rem;
+        border: 1px solid var(--gray);
+        color: var(--bk-color);
+        border-radius: 5px;
       }
     }
 
@@ -497,13 +512,15 @@
         width: 100%;
         font-family: "Gotham";
         font-size: 4vw;
-        background-color: var(--bk-color);
+        background-color: var(--gray);
         color: var(--white);
         padding: 0.3rem;
+        border: 1px solid var(--gray);
+        color: var(--bk-color);
+        border-radius: 5px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        gap: 5vw;
+        gap: 4vw;
       }
       a:hover{
         background-color: var(--gray);

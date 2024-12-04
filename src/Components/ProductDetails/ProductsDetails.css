@@ -507,7 +507,7 @@ transition: 0.6s all;
   position: fixed;
   left: 0;
   top: 0;
-  margin-top: 10vh;
+  margin-top: 12vh;
  height: 5vh;
 }
 
@@ -543,7 +543,6 @@ transition: 0.6s all;
   border: 1px solid var(--bk-color-yellow);
  }
 
-/*  */
   }
 
 

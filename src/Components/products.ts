@@ -1160,6 +1160,61 @@ const products: CartItem[] = [
     descricao:
       "Sala de jantar Madesa Jaíne com mesa de tampo de madeira e 6 cadeiras. Perfeita para quem busca conforto e qualidade com um design simples e elegante.",
   },
+  {
+    id: "74",
+    name: "Kit 4 Pulseiras Mi Band 5 6 7 Vinho Marsala Preto Azul Cinza",
+    image: "https://http2.mlstatic.com/D_NQ_NP_620665-MLB76726149734_062024-O.webp",
+    miniImages: [
+      "https://http2.mlstatic.com/D_NQ_NP_793672-MLB80911396855_112024-O.webp",
+      "https://http2.mlstatic.com/D_Q_NP_620665-MLB76726149734_062024-R.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_630741-MLB80911244263_112024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_954813-MLB80647988914_112024-O.webp",
+    ],
+    delivery: "/img/icons/full.png",
+    price: 35,
+    discount: "De R$ 45 ",
+    estado: "Novo | + de 100 vendidos",
+    descricao:
+      "",
+  },
+  {
+    id: "75",
+    name: "Kit 4 Pulseiras Mi Band 5 6 7 Vinho Marsala Preto Azul Cinza",
+    image: "https://http2.mlstatic.com/D_NQ_NP_856458-MLB77237966222_072024-O.webp",
+    miniImages: [
+      "https://http2.mlstatic.com/D_NQ_NP_856458-MLB77237966222_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_852979-MLB77237541510_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_846394-MLB77237600422_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_936850-MLB77237966808_072024-O.webp",
+    ],
+    delivery: "/img/icons/full.png",
+    price: 39,
+    discount: "De R$ 45 ",
+    estado: "Novo | + de 100 vendidos",
+    descricao:
+      "",
+  },
+  {
+    id: "76",
+    name: "Tênis Casual Masculino Smash V2 Entressola Eva Puma Oferta",
+    image: "https://http2.mlstatic.com/D_NQ_NP_951037-MLB77604356307_072024-O.webp",
+    miniImages: [
+      "https://http2.mlstatic.com/D_NQ_NP_875280-MLB77387891494_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_921609-MLB77604394965_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_988502-MLB77604258089_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_921609-MLB77604394965_072024-O.webp",
+    ],
+    delivery: "/img/icons/full.png",
+    price: 230,
+    discount: "De R$ 345 ",
+    estado: "Novo | + de 100 vendidos",
+    descricao:
+      "",
+  },
+
+
+
+
 ];
 
 export default products;

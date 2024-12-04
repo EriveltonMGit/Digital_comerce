@@ -813,8 +813,8 @@
 }
 
 }
- /* =============MIDIA SCREM ================= */
- @media (min-width: 600px) and (max-width: 1024px){
+ /* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
   /* section_5 */
 .section_9 {
   width: 100%;
@@ -874,7 +874,7 @@
 }
 /* .product-card */
 .product-card {
-  flex: 0 0 380px;
+  flex: 0 0 230px;
   height: 50vh;
   background-color: #fff;
   border-radius: 10px;
@@ -929,7 +929,7 @@
 .product-card-title{
   overflow: hidden;
   font-family: "Purista";
-  font-size: 3vw;
+  font-size: 2vw;
   color: var(--bk-color);
 
   margin-bottom: 1vh;
@@ -963,7 +963,7 @@
     font-family: "Purista";
     background-color: var(--bk-color);
     width: 80%;
-    font-size: 3vw;
+    font-size: 2vw;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -977,7 +977,7 @@
     font-family: "Purista";
     background-color: var(--bk-color);
     width: 80%;
-    font-size: 3vw;
+    font-size: 2vw;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1033,7 +1033,7 @@
     align-items: center;
     justify-content: space-around;
     color: var(--success);
-    font-size: 3vw;
+    font-size: 2vw;
   }
   img{
     width: 3vw;
@@ -1068,7 +1068,7 @@
     width: 100%;
     border-radius: 5px;
     padding: 0.5rem;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--bk-color);
   }
   
@@ -1081,8 +1081,14 @@
   position: absolute;
   margin-bottom: 25vh;
   width:98%;
+  
 }
- }
+
+}
+
+
+
+
 
 
 

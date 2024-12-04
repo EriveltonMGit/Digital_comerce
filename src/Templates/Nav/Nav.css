@@ -298,7 +298,11 @@
   .carrinho_produtos_device {
     display: none;
   }
+ 
 }
+
+
+
 
 /* midia screen 480px */
 @media (max-width: 480px) {
@@ -314,7 +318,6 @@
     justify-content: center;
     flex-direction: column;
     z-index: 9999;
-
   }
   /* search-container */
   .search-container {
@@ -366,21 +369,20 @@
 
   /* AQUI FICA O BTN HAMBURGUER */
   .area-btn_device {
-    width: 23vw;
-    height: 90%;
+    width: 95%;
+    height: 5vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     position: absolute;
-    right: 0;
-  
-    margin-right: 2vw;
-
+    top: 0;
+   
     button {
       color: white;
       font-size: 7vw;
-      margin-bottom: 0;
+      margin-left: 2%;
+      margin-right: 3%;
     }
   }
 
@@ -392,6 +394,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: var(--bk-color);
+   
     position: relative;
     padding: 0;
     overflow: hidden;
@@ -410,10 +413,11 @@
     position: absolute;
     height: 4vh;
     top: 0;
-    left: 0;
+    margin: 0 auto;
     margin-left: 4vw;
     margin-top: 1vh;
     overflow: hidden;
+    z-index: 400;
 
     img {
       width: 100%;
@@ -427,7 +431,8 @@
   /* INPUT DA NAV BAR */
   .area_content .search__bar {
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 90%;
+    height: 4vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -435,9 +440,12 @@
     /* border: 1px solid red; */
     position: absolute;
     bottom: 0;
+    margin-top: 2vh;
     left: 0;
     margin-bottom: 1vh;
     margin-left: 4vw;
+
+    margin-top: 2vh;
     button {
       border-left: 1px solid #ddd;
       height: 100%;
@@ -519,7 +527,6 @@
     justify-content: space-between;
     transition: 1s;
     overflow: hidden;
-  
 
     ul {
       width: 100%;
@@ -638,302 +645,320 @@
   }
 }
 
-/* =============MIDIA SCREM ================= */
-@media (min-width: 600px) and (max-width: 1024px) {
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
   /* NAV BAR */
-  .nav_bar {
+.nav_bar {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  
+}
+.menu-device{
+  display: none;
+}
+/* AQUI FICA A DIV DOS BUTTON CARRINHO E INPUT */
+.area_content {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bk-color);
+  position: relative;
+  padding: 0;
+}
+
+/* logo */
+.logo {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  img {
     width: 100%;
-    height: 10vh;
-    position: fixed;
-    top: 0;
+    margin-bottom: 0;
+    margin-bottom: -2vh;
+  }
+}
+/* search-container */
+.search-container {
+  width: 40%;
+ 
+}
+/* INPUT DA NAV BAR */
+.area_content .search__bar {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  
+  button {
+    border-left: 1px solid #ddd;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    z-index: 9999;
+    width: 10%;
+    font-size: 1.5vw;
+    color: #ddd;
+    transition: 0.5s;
   }
-  /* search-container */
-  .search-container {
-    width: 40%;
-    
+  button:hover {
+    color: #292c31;
   }
-  /* filter dos produtos */
-  .search-results {
-    position: fixed;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    z-index: 10;
-    margin-top: 1vh;
-    left: 0vw;
-  }
+}
+/* .search__input */
+.search__input {
+  width: 90%;
+  height: 100%;
+  padding: 0.6rem;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+  border: none;
+  
+}
 
-  .search-results ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .search-results li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+/* btn_group */
+.btn_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.6rem;
+  width: 60%;
+  color: white;
+  
+  button {
+    color: white;
+    padding: 0.3rem;
+    border-left: 1px solid #dddddd3b;
     display: flex;
     align-items: center;
-    font-family: "Gotham";
+    justify-content: space-between;
+    color: var(--bk-color-yellow);
+    font-size: 1.6vw;
+    gap: 1vw;
+    font-family: "Sora-VariableFont_wght";
+    transition: 0.5s;
+  }
+  button:hover {
+    color: var(--white);
+  }
+  button:nth-child(1){
+display:none;
+  }
+  button:nth-child(2){
+display:none;
+  }
+  
+  button:nth-child(4) {
+    padding: 0.6rem;
+    font-size: 4vw;
+  }
+  button:nth-child(5) {
+    padding: 0.6rem;
+    font-size: 3vw;
+  }
+}
+
+/* AQUI FICA A ÁREA DOS LINKS DO MENU */
+.area_links {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* categories */
+.categories {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s;
+  overflow: hidden;
+
+  position: absolute;
+  left: 0;
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     cursor: pointer;
   }
-
-  .search-results li:last-child {
-    border-bottom: none;
-  }
-
-  .search-results img {
-    width: 7vw;
-    margin-right: 10px;
-  }
-
-  .search-results span {
-    font-size: 2.5vw;
-    color: var(--bk-color);
-    font-family: "Gotham";
-  }
-
-  /* AQUI FICA A DIV DOS BUTTON CARRINHO E INPUT */
-  .area_content {
-    width: 100%;
-    height: 60%;
+  ul:hover .list_categorys {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--bk-color);
-    position: relative;
-    padding: 0;
   }
 
-  /* logo */
-  .logo {
-    width: 15%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-
-    img {
-      width: 12vw;
-      margin-bottom: 0;
-      margin-bottom: -2vh;
-    }
-  }
-
-  /* INPUT DA NAV BAR */
-  .area_content .search__bar {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-
-    button {
-      border-left: 1px solid #ddd;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 10%;
-      font-size: 1.5vw;
-      color: #ddd;
-      transition: 0.5s;
-    }
-    button:hover {
-      color: #292c31;
-    }
-  }
-  /* .search__input */
-  .search__input {
-    width: 90%;
-    height: 100%;
-    padding: 0.6rem;
-    border-radius: 10px 0px 0px 10px;
-    outline: none;
-    border: none;
-  }
-
-  /* btn_group */
-  .btn_group {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.6rem;
+  /*  .list_categorys */
+  .list_categorys {
     width: 50%;
-    color: white;
-
-    button {
-      color: white;
-      padding: 0.3rem;
-      border-left: 1px solid #dddddd3b;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: var(--bk-color-yellow);
-      font-size: 1.1vw;
-      gap: 1vw;
-      font-family: "Sora-VariableFont_wght";
-      transition: 0.5s;
-    }
-    button:hover {
-      color: var(--white);
-    }
-    button:nth-child(4) {
-      padding: 0.6rem;
-      font-size: 1.7vw;
-    }
-    button:nth-child(5) {
-      padding: 0.6rem;
-      font-size: 1.6vw;
-    }
-  }
-
-  /* AQUI FICA A ÁREA DOS LINKS DO MENU */
-  .area_links {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--bk-color-yellow);
-  }
-
-  /* categories */
-  .categories {
-    width: 15%;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    
+    margin-top: 73vh;
+    z-index: 800;
+    margin-left: 20vw;
+
+    display: none;
+    cursor: pointer;
+    gap: 0.5vh;
+    padding: 0.5rem;
     transition: 1s;
-    overflow: hidden;
-    ul {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      cursor: pointer;
-    }
-    ul:hover .list_categorys {
-      display: flex;
-    }
-
-    /*  .list_categorys */
-    .list_categorys {
-      width: 20%;
-      height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      position: fixed;
-      background-color: var(--bk-color-yellow);
-      margin-top: 60vh;
-      z-index: 800;
-      display: none;
-      cursor: pointer;
-      gap: 0.5vh;
-      padding: 0.5rem;
-      transition: 1s;
-      border-radius: 0px 0px 5px 0px;
-
-      li {
-        border: 1px solid var(--gray);
-        width: 85%;
-        height: 5vh;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-      }
-
-      li a {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--bk-color);
-        overflow: hidden;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-      li a:hover {
-        color: var(--white);
-        background-color: var(--gray-dark);
-      }
-    }
-  }
-
-  /* ul_links */
-  .ul_links {
-    width: 80%;
-    max-width: 1200px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    border-radius: 0px 0px 5px 0px;
 
     li {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+      border: 1px solid var(--gray);
+      width: 85%;
+      height: 5vh;
+      border-radius: 5px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
+      justify-content: space-between;
+      overflow: hidden;
     }
+
     li a {
       width: 100%;
       height: 100%;
-      overflow: hidden;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      font-size: 1vw;
-      transition: 1s;
-      font-family: "Sora-VariableFont_wght";
-      position: relative;
-      z-index: 2;
+      justify-content: space-between;
+      color: var(--bk-color);
+      overflow: hidden;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 3vw;
     }
     li a:hover {
-      color: var(--bk-color-yellow);
-    }
-
-    li::after {
-      content: "";
-      position: absolute;
-      top: 0; /* Começa do topo */
-      left: 0;
-      width: 100%; /* A largura será fixa */
-      height: 0; /* A altura começa de 0 */
-      background-color: var(--bk-color);
-      transition: height 0.3s ease, top 0.3s ease;
-    }
-
-    li:hover::after {
-      height: 100%; /* Preenche toda a altura */
-      top: 0; /* Garante que a posição se mantenha no topo */
-      background-color: var(--bk-color);
+      color: var(--white);
+      background-color: var(--gray-dark);
     }
   }
 }
 
-/* =============MIDIA SCREM ================= */
+/* ul_links */
+.ul_links {
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+display: none;
+  li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  li a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3vw;
+    transition: 1s;
+    font-family: "Sora-VariableFont_wght";
+    position: relative;
+    z-index: 2;
+  }
+  li a:hover {
+    color: var(--bk-color-yellow);
+  }
+
+  li::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Começa do topo */
+    left: 0;
+    width: 100%; /* A largura será fixa */
+    height: 0; /* A altura começa de 0 */
+    background-color: var(--bk-color);
+    transition: height 0.3s ease, top 0.3s ease;
+  }
+
+  li:hover::after {
+    height: 100%; /* Preenche toda a altura */
+    top: 0; /* Garante que a posição se mantenha no topo */
+    background-color: var(--bk-color);
+  }
+}
+
+.search-results {
+  position: fixed;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  margin-top: 1vh;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  font-family: "Gotham";
+  cursor: pointer;
+  
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+.search-results img {
+  width: 3vw;
+  margin-right: 10px;
+}
+
+.search-results span {
+  font-size: 3vw;
+  color: var(--bk-color);
+  font-family: "Gotham";
+}
+
+}
+/* =============MIDIA SCREM DSKTOP================= */
 @media (min-width: 800px) and (max-width: 1280px) {
   /* NAV BAR */
   .nav_bar {

@@ -26,6 +26,7 @@
    transition: 1s all;
    box-shadow: 1px 1px 1rem black;
    color: black;
+  
  
 }
 /* Carrinho visível */
@@ -33,4 +34,84 @@
   display: flex;
   opacity: 1;
   transform: translateX(0%);
+}
+
+
+ /* Estilos para celulares grandes em modo retrato */
+ @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+  #favoritosProdutos{
+ 
+    position: fixed;
+    right: 0;
+    height: 90vh;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+    overflow-y: auto;
+    gap: 1vh;
+    flex-direction: column;
+   
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+   transform: translateX(110%);
+   transition: 1s all;
+   box-shadow: 1px 1px 1rem black;
+   color: black;
+   font-size: 5vw;
+  
+  
+  }
+  /* Carrinho visível */
+  #favoritosProdutos.show_cart {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0%);
+  }
+ }
+/* =============MIDIA SCREM DESKTOP================= */
+@media (min-width: 800px) and (max-width: 1280px){
+  
+
+
+
+#favoritosProdutos{
+ 
+  position: fixed;
+  right: 0;
+  height: 90vh;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 110vh;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -2;
+  overflow-y: auto;
+  gap: 1vh;
+  flex-direction: column;
+ 
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+ transform: translateX(110%);
+ transition: 1s all;
+ box-shadow: 1px 1px 1rem black;
+ color: black;
+
+
+}
+/* Carrinho visível */
+#favoritosProdutos.show_cart {
+display: flex;
+opacity: 1;
+transform: translateX(0%);
+}
+
 }

@@ -151,11 +151,12 @@ function Nav() {
 
         {/* Botões para dispositivos */}
         <div className="area-btn_device">
-          <button className="carrinho_produtos_device" onClick={abrirCart}>
-            <FiShoppingCart />
-          </button>
+         
           <button className="btn_hamburguer" onClick={abrirMenuDevcie}>
             <GiHamburgerMenu />
+          </button>
+          <button className="carrinho_produtos_device" onClick={abrirCart}>
+            <FiShoppingCart />
           </button>
         </div>
 
