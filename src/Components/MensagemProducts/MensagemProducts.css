@@ -109,7 +109,8 @@
 }
 
 /* =============MIDIA SCREM ================= */
-@media (min-width: 600px) and (max-width: 1024px){
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
 
 #mensagemCartProdutos{
   position: fixed;
@@ -162,14 +163,121 @@
   display: none;
 }
 }
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
 
-/* =============MIDIA SCREM ================= */
-@media (min-width: 800px) and (max-width: 1280px){
+  #mensagemCartProdutos{
+    position: fixed;
+    margin-top: 20vh;
+    width: auto;
   
-/* mensagemCartProdutos */
+    background-color: #45d80b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+   
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 9990;
+    font-family: "Sora-VariableFont_wght";
+    font-size: 2vw;
+    color: white;
+    animation: slideMensagem 1s linear;
+    display: none;
+  }
+  
+  @keyframes slideMensagem {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+   
+  }
+  
+  
+  #mensagemRemoveCartProdutos{
+    position: fixed;
+    margin-top: 20vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 9990;
+    font-family: "Sora-VariableFont_wght";
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    animation: slideMensagem 1s linear;
+    display: none;
+  }
+  }
+  /* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
+
+  #mensagemCartProdutos{
+    position: fixed;
+    margin-top: 18vh;
+    width: 60%;
+  
+    background-color: #45d80b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 23vw;
+   
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 9990;
+    font-family: "Sora-VariableFont_wght";
+    font-size: 3vw;
+    color: white;
+    animation: slideMensagem 1s linear;
+    display: none;
+  }
+  
+  @keyframes slideMensagem {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+   
+  }
+  
+  
+  #mensagemRemoveCartProdutos{
+    position: fixed;
+    margin-top: 18vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 23vw;
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 9990;
+    font-family: "Sora-VariableFont_wght";
+    font-size: 3vw;
+    background-color: red;
+    color: white;
+    animation: slideMensagem 1s linear;
+    display: none;
+  }
+  }
+
+/* =============MIDIA SCREM desktop================= */
+@media screen and (min-width: 770px) and (max-width: 1280px) and (orientation: landscape){
+      /* mensagemCartProdutos */
 #mensagemCartProdutos{
   position: fixed;
-  margin-top: 17vh;
+  margin-top: 25vh;
   width: 25%;
   display: flex;
   align-items: center;
@@ -198,7 +306,58 @@
 
 #mensagemRemoveCartProdutos{
   position: fixed;
-  margin-top: 17vh;
+  margin-top: 25vh;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  color: white;
+  animation: slideMensagem 1s linear;
+  background-color: red;
+  display: none;
+}
+} 
+/* =============MIDIA SCREM ================= */
+@media (min-width: 1281px) and (max-width: 2280px){
+  
+/* mensagemCartProdutos */
+#mensagemCartProdutos{
+  position: fixed;
+  margin-top: 25vh;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+  background-color: #45d80b;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 9990;
+  font-family: "Sora-VariableFont_wght";
+  color: white;
+  animation: slideMensagem 1s linear;
+  display: none;
+}
+
+@keyframes slideMensagem {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+ 
+}
+
+
+#mensagemRemoveCartProdutos{
+  position: fixed;
+  margin-top: 25vh;
   width: 25%;
   display: flex;
   align-items: center;

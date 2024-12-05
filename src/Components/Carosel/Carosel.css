@@ -12,7 +12,25 @@
    }
    
 }
-
+/* =============MIDIA SCREM ================= */
+@media (max-width:320px){
+    .oferta{
+   
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+       img{
+        width: 50vw;
+       }
+       
+    }
+    
+}
 /* =============MIDIA SCREM ================= */
 @media (max-width:480px){
     .oferta{
@@ -48,6 +66,42 @@
         overflow: hidden;
        img{
         width: 40vw;
+       }
+       
+    }
+}
+/*Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
+    .oferta{
+   
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+       img{
+        width: 37vw;
+       }
+       
+    }
+}
+/*Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 770px) and (max-width: 1280px) and (orientation: portrait){
+    .oferta{
+   
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+       img{
+        width: 45vw;
        }
        
     }

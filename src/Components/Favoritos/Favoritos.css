@@ -74,8 +74,45 @@
   transform: translateX(0%);
   }
  }
+  /* Estilos para celulares grandes em modo retrato */
+  @media screen and (min-width: 770px) and (max-width: 1280px) and (orientation: portrait){
+    #favoritosProdutos{
+   
+      position: fixed;
+      right: 0;
+      height: 90vh;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 100vh;
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: -2;
+      overflow-y: auto;
+      gap: 1vh;
+      flex-direction: column;
+     
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+     transform: translateX(110%);
+     transition: 1s all;
+     box-shadow: 1px 1px 1rem black;
+     color: black;
+     font-size: 2vw;
+    
+    
+    }
+    /* Carrinho visível */
+    #favoritosProdutos.show_cart {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0%);
+    }
+   }
 /* =============MIDIA SCREM DESKTOP================= */
-@media (min-width: 800px) and (max-width: 1280px){
+@media (min-width: 1280px) and (max-width: 2280px){
   
 
 

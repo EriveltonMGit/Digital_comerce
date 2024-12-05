@@ -51,6 +51,68 @@ p {
   
 
 }
+
+
+
+/* =============MIDIA SCREM ================= */
+@media (max-width: 320px) {
+  /* SECTION 1 */
+  .section_1 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  /* carosel_products */
+  .section_1 .carosel_products {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* carousel-inner */
+
+  /* carousel  */
+  .carousel {
+    position: absolute;
+    top: 0;
+    margin-top: 8vh;
+
+    img {
+      height: 25vh;
+      object-fit: cover;
+    }
+  }
+  /* carousel-indicators */
+  .carousel-indicators {
+    position: absolute;
+    margin-bottom: 6vh;
+  }
+  /* carousel-item */
+  .carousel-item {
+    height: 100%;
+  }
+  /* carousel-caption  h5*/
+  .carousel-caption h5,
+  p {
+    overflow: hidden;
+    margin-bottom: -2vh;
+  }
+  .opacity_nuvem{
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0.979), white);
+    position: absolute;
+    top: 0;
+    margin-top: 25vh;
+     margin-bottom: 23vh;
+  }
+}
 /* =============MIDIA SCREM ================= */
 @media (max-width: 480px) {
   /* SECTION 1 */
@@ -112,69 +174,6 @@ p {
   
 }
 }
-
-/* =============MIDIA SCREM ================= */
-@media (max-width: 320px) {
-  /* SECTION 1 */
-  .section_1 {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-  }
-
-  /* carosel_products */
-  .section_1 .carosel_products {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  /* carousel-inner */
-
-  /* carousel  */
-  .carousel {
-    position: absolute;
-    top: 0;
-    margin-top: 8vh;
-
-    img {
-      height: 25vh;
-      object-fit: cover;
-    }
-  }
-  /* carousel-indicators */
-  .carousel-indicators {
-    position: absolute;
-    margin-bottom: 6vh;
-  }
-  /* carousel-item */
-  .carousel-item {
-    height: 100%;
-  }
-  /* carousel-caption  h5*/
-  .carousel-caption h5,
-  p {
-    overflow: hidden;
-    margin-bottom: -2vh;
-  }
-  .opacity_nuvem{
-    height: 10vh;
-    width: 100%;
-    background-image: linear-gradient( rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0.979), white);
-    position: absolute;
-    top: 0;
-    margin-top: 25vh;
-     margin-bottom: 23vh;
-  }
-}
-
-
-
 /* Estilos para celulares grandes em modo retrato */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
    /* SECTION 1 */
@@ -240,9 +239,73 @@ p {
   
 }
 }
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
+  /* SECTION 1 */
+  .section_1 {
+   width: 100%;
+   height: 80vh;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   overflow: hidden;
+   flex-direction: column;
 
+  
+ }
+
+ /* carosel_products */
+ .section_1 .carosel_products {
+   width: 100%;
+   height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ /* carousel-inner */
+
+ /* carousel  */
+ .carousel {
+   position: absolute;
+   top: 0;
+   margin-top: 15vh;
+
+   img {
+     height: 45vh;
+     object-fit: cover;
+  
+   }
+ }
+ /* carousel-indicators */
+ .carousel-indicators {
+   position: absolute;
+   margin-bottom: 8vh;
+   
+ }
+ /* carousel-item */
+ .carousel-item {
+   height: 100%;
+ }
+ /* carousel-caption  h5*/
+ .carousel-caption h5,
+ p {
+   overflow: hidden;
+   margin-bottom: 2vh;
+ }
+ /* opacity_nuvem */
+.opacity_nuvem{
+ height: 10vh;
+ width: 100%;
+ background-image: linear-gradient( rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0.979), white);
+ position: absolute;
+top: 0;
+margin-top: 52vh;
+ margin-bottom: 23vh;
+ 
+}
+}
 /* =============MIDIA SCREM DESKTOP ================= */
-@media (min-width: 800px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   /* SECTION 1 */
 .section_1 {
   width: 100%;

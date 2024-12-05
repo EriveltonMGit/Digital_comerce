@@ -1194,22 +1194,21 @@ const products: CartItem[] = [
     descricao:
       "",
   },
+  
   {
-    id: "76",
-    name: "Tênis Casual Masculino Smash V2 Entressola Eva Puma Oferta",
-    image: "https://http2.mlstatic.com/D_NQ_NP_951037-MLB77604356307_072024-O.webp",
+    id: "77",
+    name: "Smartphone Samsung Galaxy S21 5G 128GB Tela 6.2",
+    image: "https://http2.mlstatic.com/D_NQ_NP_2X_812601-MLB47756511173_102021-O.webp",
     miniImages: [
-      "https://http2.mlstatic.com/D_NQ_NP_875280-MLB77387891494_072024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_921609-MLB77604394965_072024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_988502-MLB77604258089_072024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_921609-MLB77604394965_072024-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_978165-MLB47756511785_102021-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_812601-MLB47756511173_102021-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_939014-MLB47756511798_102021-O.webp",
     ],
-    delivery: "/img/icons/full.png",
-    price: 230,
-    discount: "De R$ 345 ",
-    estado: "Novo | + de 100 vendidos",
-    descricao:
-      "",
+    delivery: "/img/icons/express.png",
+    price: 4200,
+    discount: "De R$ 4999",
+    estado: "Novo | 50 vendidos",
+    descricao: "",
   },
 
 
