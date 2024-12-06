@@ -618,7 +618,7 @@ height: 7vh;
 .btn_exibir{
   position: absolute;
   bottom: 0;
-  margin-bottom: 80%;
+  margin-bottom: 90%;
   background-color: var(--success);
   width: 80%;
   padding: 0.4rem;
